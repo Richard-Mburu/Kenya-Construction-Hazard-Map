@@ -1208,7 +1208,23 @@ function formatMetric(value, unit) {
 
 function formatKmdPeriod(period) {
   if (!period?.start || !period?.end) return 'Latest KMD period';
-  return `${period.start.slice(0, 4)}-${period.start.slice(4, 6)}-${period.start.slice(6)} to ${period.end.slice(0, 4)}-${period.end.slice(4, 6)}-${period.end.slice(6)}`;
+  const startLabel = formatKmdMonth(period.start);
+  const endLabel = formatKmdMonth(period.end);
+  return startLabel === endLabel ? startLabel : `${startLabel} to ${endLabel}`;
+}
+
+function formatKmdMonth(value) {
+  const text = String(value || '');
+  const year = Number(text.slice(0, 4));
+  const month = Number(text.slice(4, 6));
+  if (!Number.isInteger(year) || !Number.isInteger(month) || month < 1 || month > 12) {
+    return text || 'Unknown month';
+  }
+  return new Date(Date.UTC(year, month - 1, 1)).toLocaleString('en-US', {
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC'
+  });
 }
 
 function recentDateISO(daysBack) {

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Kenya Construction Hazard Map root server configuration",
   "scripts": {
-    "dev": "npx -y http-server . -p 3000 -o"
+    "dev": "npx -y http-server . -p 3000 -o",
+    "refresh:data": "node scripts/build-forecast-data.js"
   }
 }

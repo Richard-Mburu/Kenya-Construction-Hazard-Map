@@ -19,6 +19,7 @@ let layerState = {
   liveEarthquake: true
 };
 const dynamicLayers = {};
+let admin0GeoJSON = null;
 let admin1GeoJSON = null;
 let admin2GeoJSON = null;
 let allKmdPeriods = [];
@@ -26,6 +27,7 @@ let latestKmdPeriod = null;
 let meteoGridData = null;
 let elevationData = null;
 let earthquakeData = null;
+let surfaceRasterCache = {};
 let dynamicLayersStarted = false;
 let chartsInited = false;
 let questionnaireStep = 0;
@@ -107,11 +109,21 @@ const KMD_LAYER_META = {
   }
 };
 const SURFACE_LAYER_META = {
+  soil: {
+    label: 'Soil saturation',
+    field: 'soil',
+    unit: '% saturation',
+    colors: ['#ca8a04', '#a3e635', '#22c55e', '#16a34a', '#15803d', '#14532d'],
+    format: value => formatMetric(value * 100, '% saturation'),
+    opacity: 0.5
+  },
   solar: {
     label: 'Solar radiation',
     field: 'solar',
     unit: 'W/m2',
-    colors: ['#fefce8', '#fef08a', '#facc15', '#f59e0b', '#d97706', '#92400e']
+    colors: ['#fefce8', '#fef08a', '#facc15', '#f59e0b', '#d97706', '#92400e'],
+    format: value => formatMetric(value, 'W/m2'),
+    opacity: 0.42
   },
   elevation: {
     label: 'Elevation',
@@ -518,6 +530,260 @@ function sampleRasterColor(key, intensity) {
   return palette[palette.length - 1][1];
 }
 
+function idwInterpolateSurfaceValue(point, stations, field) {
+  let total = 0;
+  let weightSum = 0;
+
+  for (const station of stations) {
+    const value = Number(station[field]);
+    if (!Number.isFinite(value)) continue;
+
+    const dLat = point.lat - station.lat;
+    const dLng = (point.lng - station.lng) * Math.cos((point.lat * Math.PI) / 180);
+    const distSq = dLat * dLat + dLng * dLng;
+
+    if (distSq < 0.000001) return value;
+
+    const gaussian = Math.exp(-distSq / 4.5);
+    const weight = gaussian / Math.pow(distSq, 1.15);
+    total += value * weight;
+    weightSum += weight;
+  }
+
+  return weightSum ? total / weightSum : null;
+}
+
+function interpolateColorScale(value, min, max, colors) {
+  if (!colors?.length) return [0, 0, 0];
+  if (colors.length === 1) return hexToRgb(colors[0]);
+
+  const pct = Math.max(0, Math.min(1, (value - min) / ((max - min) || 1)));
+  const scaled = pct * (colors.length - 1);
+  const lowerIndex = Math.floor(scaled);
+  const upperIndex = Math.min(colors.length - 1, lowerIndex + 1);
+  const t = scaled - lowerIndex;
+  const lower = hexToRgb(colors[lowerIndex]);
+  const upper = hexToRgb(colors[upperIndex]);
+
+  return [
+    Math.round(lower[0] + (upper[0] - lower[0]) * t),
+    Math.round(lower[1] + (upper[1] - lower[1]) * t),
+    Math.round(lower[2] + (upper[2] - lower[2]) * t)
+  ];
+}
+
+function hexToRgb(hex) {
+  const clean = String(hex || '').replace('#', '');
+  const expanded = clean.length === 3
+    ? clean.split('').map(char => char + char).join('')
+    : clean;
+  const value = Number.parseInt(expanded, 16);
+  if (!Number.isFinite(value)) return [0, 0, 0];
+  return [(value >> 16) & 255, (value >> 8) & 255, value & 255];
+}
+
+function traceRasterGeoJSONPath(ctx, geojson, bounds, width, height) {
+  ctx.beginPath();
+  if (!geojson) {
+    traceRasterRingPath(ctx, KENYA_OUTLINE.map(([lat, lng]) => [lng, lat]), bounds, width, height);
+    return;
+  }
+
+  const features = geojson?.type === 'FeatureCollection'
+    ? geojson.features || []
+    : geojson?.type === 'Feature'
+      ? [geojson]
+      : geojson
+        ? [{ geometry: geojson }]
+        : [];
+
+  features.forEach(feature => traceRasterGeometryPath(ctx, feature.geometry, bounds, width, height));
+}
+
+function traceRasterGeometryPath(ctx, geometry, bounds, width, height) {
+  if (!geometry) return;
+  if (geometry.type === 'Polygon') {
+    geometry.coordinates.forEach(ring => traceRasterRingPath(ctx, ring, bounds, width, height));
+  } else if (geometry.type === 'MultiPolygon') {
+    geometry.coordinates.forEach(polygon => {
+      polygon.forEach(ring => traceRasterRingPath(ctx, ring, bounds, width, height));
+    });
+  }
+}
+
+function traceRasterRingPath(ctx, ring, bounds, width, height) {
+  const west = bounds.getWest();
+  const east = bounds.getEast();
+  const south = bounds.getSouth();
+  const north = bounds.getNorth();
+
+  ring.forEach(([lng, lat], index) => {
+    const x = ((lng - west) / ((east - west) || 1)) * width;
+    const y = ((north - lat) / ((north - south) || 1)) * height;
+    if (index === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  });
+  ctx.closePath();
+}
+
+function getCachedSurfaceRaster(key, stations, meta) {
+  const signature = buildSurfaceRasterSignature(key, stations, meta.field);
+  if (surfaceRasterCache[key]?.signature === signature) {
+    return surfaceRasterCache[key];
+  }
+
+  const raster = generateSurfaceRaster(key, stations, meta);
+  surfaceRasterCache[key] = { ...raster, signature };
+  return surfaceRasterCache[key];
+}
+
+function buildSurfaceRasterSignature(key, stations, field) {
+  const rows = stations
+    .map(row => `${row.name}:${row.lat.toFixed(4)},${row.lng.toFixed(4)},${Number(row[field]).toFixed(4)}`)
+    .sort()
+    .join('|');
+  return `${key}:${field}:${rows}`;
+}
+
+function generateSurfaceRaster(key, stations, meta) {
+  const bounds = getKenyaImageBounds();
+  const { width, height } = getSurfaceRasterDimensions(bounds);
+  const values = stations.map(row => Number(row[meta.field])).filter(Number.isFinite);
+  const range = getRange(values);
+  const raw = document.createElement('canvas');
+  raw.width = width;
+  raw.height = height;
+  const rawCtx = raw.getContext('2d');
+  if (!rawCtx) return null;
+
+  const image = rawCtx.createImageData(width, height);
+  const data = image.data;
+  const west = bounds.getWest();
+  const east = bounds.getEast();
+  const south = bounds.getSouth();
+  const north = bounds.getNorth();
+
+  for (let y = 0; y < height; y++) {
+    const lat = north - ((y + 0.5) / height) * (north - south);
+    for (let x = 0; x < width; x++) {
+      const lng = west + ((x + 0.5) / width) * (east - west);
+      const value = idwInterpolateSurfaceValue({ lat, lng }, stations, meta.field);
+      if (!Number.isFinite(value)) continue;
+
+      const [r, g, b] = interpolateColorScale(value, range.min, range.max, meta.colors);
+      const index = (y * width + x) * 4;
+      data[index] = r;
+      data[index + 1] = g;
+      data[index + 2] = b;
+      data[index + 3] = 255;
+    }
+  }
+
+  rawCtx.putImageData(image, 0, 0);
+
+  const clipped = document.createElement('canvas');
+  clipped.width = width;
+  clipped.height = height;
+  const clippedCtx = clipped.getContext('2d');
+  if (!clippedCtx) return null;
+
+  clippedCtx.save();
+  traceRasterGeoJSONPath(clippedCtx, admin0GeoJSON, bounds, width, height);
+  clippedCtx.clip('evenodd');
+  clippedCtx.imageSmoothingEnabled = true;
+  clippedCtx.imageSmoothingQuality = 'high';
+  clippedCtx.filter = 'blur(1.25px)';
+  clippedCtx.drawImage(raw, 0, 0);
+  clippedCtx.filter = 'none';
+  clippedCtx.restore();
+
+  featherRasterAlpha(clippedCtx, bounds, width, height);
+
+  return {
+    url: clipped.toDataURL('image/png'),
+    bounds,
+    opacity: Math.max(0.4, Math.min(0.6, meta.opacity || 0.5))
+  };
+}
+
+function featherRasterAlpha(ctx, bounds, width, height) {
+  if (!admin0GeoJSON) return;
+  const mask = document.createElement('canvas');
+  mask.width = width;
+  mask.height = height;
+  const maskCtx = mask.getContext('2d');
+  if (!maskCtx) return;
+
+  maskCtx.fillStyle = '#fff';
+  traceRasterGeoJSONPath(maskCtx, admin0GeoJSON, bounds, width, height);
+  maskCtx.fill('evenodd');
+  maskCtx.filter = 'blur(3px)';
+  maskCtx.globalCompositeOperation = 'source-in';
+  maskCtx.drawImage(mask, 0, 0);
+  maskCtx.filter = 'none';
+
+  ctx.save();
+  ctx.globalCompositeOperation = 'destination-in';
+  ctx.drawImage(mask, 0, 0);
+  ctx.restore();
+}
+
+function getKenyaImageBounds() {
+  const bounds = getGeoJSONBounds(admin0GeoJSON);
+  if (bounds) return bounds;
+
+  const lats = KENYA_OUTLINE.map(([lat]) => lat);
+  const lngs = KENYA_OUTLINE.map(([, lng]) => lng);
+  return L.latLngBounds(
+    [Math.min(...lats), Math.min(...lngs)],
+    [Math.max(...lats), Math.max(...lngs)]
+  );
+}
+
+function getGeoJSONBounds(geojson) {
+  const coords = [];
+  collectGeoJSONCoordinates(geojson, coords);
+  if (!coords.length) return null;
+
+  const lats = coords.map(([, lat]) => lat);
+  const lngs = coords.map(([lng]) => lng);
+  return L.latLngBounds(
+    [Math.min(...lats), Math.min(...lngs)],
+    [Math.max(...lats), Math.max(...lngs)]
+  );
+}
+
+function collectGeoJSONCoordinates(node, coords) {
+  if (!node) return;
+  if (node.type === 'FeatureCollection') {
+    (node.features || []).forEach(feature => collectGeoJSONCoordinates(feature, coords));
+  } else if (node.type === 'Feature') {
+    collectGeoJSONCoordinates(node.geometry, coords);
+  } else if (node.type === 'Polygon') {
+    node.coordinates.flat(1).forEach(coord => coords.push(coord));
+  } else if (node.type === 'MultiPolygon') {
+    node.coordinates.flat(2).forEach(coord => coords.push(coord));
+  }
+}
+
+function getSurfaceRasterDimensions(bounds) {
+  const latSpan = Math.max(0.1, bounds.getNorth() - bounds.getSouth());
+  const lngSpan = Math.max(0.1, bounds.getEast() - bounds.getWest());
+  const aspect = Math.max(0.35, Math.min(2.5, lngSpan / latSpan));
+  const maxSide = 1500;
+  const minSide = 900;
+  if (aspect >= 1) {
+    return {
+      width: maxSide,
+      height: Math.max(minSide, Math.round(maxSide / aspect))
+    };
+  }
+  return {
+    width: Math.max(minSide, Math.round(maxSide * aspect)),
+    height: maxSide
+  };
+}
+
 function quantize(value, steps) {
   return Math.round(value * steps) / steps;
 }
@@ -561,12 +827,14 @@ async function loadDynamicMapLayers() {
   setLiveLayerStatus('Loading Kenya boundary layers and KMD forecasts...');
 
   try {
-    console.info('Loading dynamic map JSON files:', 'data/ken_admin1.geojson', 'data/ken_admin2.geojson', 'data/forecast_county_data.json');
-    const [admin1, admin2, kmd] = await Promise.all([
+    console.info('Loading dynamic map JSON files:', 'data/ken_admin0.geojson', 'data/ken_admin1.geojson', 'data/ken_admin2.geojson', 'data/forecast_county_data.json');
+    const [admin0, admin1, admin2, kmd] = await Promise.all([
+      fetchJSON('data/ken_admin0.geojson'),
       fetchJSON('data/ken_admin1.geojson'),
       fetchJSON('data/ken_admin2.geojson'),
       fetchJSON('data/forecast_county_data.json')
     ]);
+    admin0GeoJSON = admin0;
     admin1GeoJSON = admin1;
     admin2GeoJSON = admin2;
     allKmdPeriods = kmd?.periods || [];
@@ -600,15 +868,18 @@ function updateDynamicLayers() {
   if (!map) return;
   updateKmdChoropleth('rainfall');
   updateKmdChoropleth('heat');
-  updateSurfaceChoropleth('solar');
-  updateSurfaceChoropleth('elevation');
+  removeLayer('soil');
+  removeLayer('solar');
+  updateSurfaceRasterOverlay('soil');
+  updateSurfaceRasterOverlay('solar');
+  updateElevationSamples();
   updateSubcountyLayer();
   updateWindLayer();
-  updatePointLayer('soil');
   updateEarthquakeLayer();
   updateSiteMarkerPopups();
   updateAutofillSection();
   updateLegend();
+  renderHeatCanvas();
 }
 
 function updateSiteMarkerPopups() {
@@ -809,6 +1080,40 @@ function updateLegend() {
   });
 
   panel.innerHTML = htmls.join('');
+  normalizeLegendPanel(panel);
+}
+
+function normalizeLegendPanel(panel) {
+  panel.querySelectorAll('.legend-section').forEach(section => {
+    const text = section.textContent || '';
+    const desc = section.lastElementChild;
+    if (!desc) return;
+
+    if (text.includes('Site Risk Scale')) {
+      desc.textContent = 'Green: LOW (<40). Amber: MEDIUM (40-64). Red: HIGH (>=65).';
+    } else if (text.includes('KMD Max Temperature')) {
+      desc.textContent = 'County choropleth of maximum temperature in C.';
+    } else if (text.includes('Wind Speed')) {
+      desc.textContent = 'Directional arrows at Open-Meteo sample stations. Arrow size and color scale with speed.';
+    } else if (text.includes('Soil Saturation')) {
+      desc.textContent = 'IDW interpolated Open-Meteo surface clipped to Kenya. Falls back to station points if too sparse.';
+    } else if (text.includes('Solar Radiation')) {
+      desc.textContent = 'IDW interpolated Open-Meteo surface clipped to Kenya with reduced opacity for stacking.';
+    } else if (text.includes('Elevation')) {
+      desc.textContent = 'Sampled elevation points only; no DEM or hillshade source is bundled in this demo.';
+    } else if (text.includes('Live Earthquakes')) {
+      desc.textContent = 'USGS circles scale by magnitude and shift from yellow to red by depth.';
+      section.querySelectorAll('.quake-marker').forEach((marker, index) => {
+        const styles = [
+          ['#facc15', '#a16207'],
+          ['#fb923c', '#c2410c'],
+          ['#dc2626', '#991b1b']
+        ];
+        marker.style.background = styles[index]?.[0] || '#facc15';
+        marker.style.borderColor = styles[index]?.[1] || '#a16207';
+      });
+    }
+  });
 }
 
 function updateKmdChoropleth(key) {
@@ -855,44 +1160,24 @@ function updateKmdChoropleth(key) {
   }).addTo(map);
 }
 
-function updateSurfaceChoropleth(key) {
-  if (!admin1GeoJSON) return;
+function updateSurfaceRasterOverlay(key) {
   removeLayer(key);
-  if (!layerState[key]) return;
-
+  if (!layerState[key] || !meteoGridData?.length) return;
   const meta = SURFACE_LAYER_META[key];
-  const source = key === 'solar' ? meteoGridData : elevationData;
-  if (!source?.length) return;
+  const stations = meteoGridData.filter(row => Number.isFinite(Number(row[meta.field])));
 
-  const values = admin1GeoJSON.features
-    .map(feature => interpolateStationMetric(getFeatureCenter(feature), source, meta.field))
-    .filter(Number.isFinite);
-  const range = getRange(values);
+  if (stations.length < 3) {
+    dynamicLayers[key] = L.layerGroup(buildStationMarkers(meteoGridData, meta, key)).addTo(map);
+    return;
+  }
 
-  dynamicLayers[key] = L.geoJSON(admin1GeoJSON, {
-    style: feature => {
-      const value = interpolateStationMetric(getFeatureCenter(feature), source, meta.field);
-      return {
-        color: 'rgba(15,23,42,.34)',
-        weight: 0.55,
-        fill: true,
-        fillColor: Number.isFinite(value) ? colorFromScale(value, range.min, range.max, meta.colors) : '#e5e7eb',
-        fillOpacity: Number.isFinite(value) ? 0.58 : 0.1
-      };
-    },
-    onEachFeature: (feature, layer) => {
-      const center = getFeatureCenter(feature);
-      const value = interpolateStationMetric(center, source, meta.field);
-      const name = feature.properties?.adm1_name || 'County';
-      layer.bindPopup(`
-        <div class="popup-name">${name}</div>
-        <div class="popup-meta"><span>${meta.label}</span></div>
-        <div class="popup-risks">
-          <div class="popup-risk-item"><span>${Number.isFinite(value) ? formatMetric(value, meta.unit) : 'No data'}</span></div>
-          <div class="popup-risk-item"><span style="color:var(--muted)">Interpolated from Kenya live stations</span></div>
-        </div>
-      `, { maxWidth: 260, className: 'kchm-popup' });
-    }
+  const raster = getCachedSurfaceRaster(key, stations, meta);
+  if (!raster) return;
+
+  dynamicLayers[key] = L.imageOverlay(raster.url, raster.bounds, {
+    opacity: raster.opacity,
+    interactive: false,
+    className: `surface-raster surface-raster-${key}`
   }).addTo(map);
 }
 
@@ -923,6 +1208,7 @@ async function loadMeteoGrid() {
     const payload = await fetchJSON(url);
     const rows = Array.isArray(payload) ? payload : [payload];
     meteoGridData = rows.map((row, index) => normalizeMeteoRow(row, LIVE_STATIONS[index])).filter(Boolean);
+    surfaceRasterCache = {};
     updateDynamicLayers();
     setLiveLayerStatus(buildLayerStatus());
   } catch (err) {
@@ -1001,30 +1287,35 @@ function updateWindLayer() {
   })).addTo(map);
 }
 
-function updatePointLayer(key) {
-  removeLayer(key);
-  if (!layerState[key] || !meteoGridData?.length) return;
+function updateElevationSamples() {
+  removeLayer('elevation');
+  if (!layerState.elevation || !elevationData?.length) return;
+  dynamicLayers.elevation = L.layerGroup(buildStationMarkers(elevationData, SURFACE_LAYER_META.elevation, 'elevation')).addTo(map);
+}
 
-  const isSoil = key === 'soil';
-  dynamicLayers[key] = L.layerGroup(meteoGridData.map(row => {
-    const value = Number(isSoil ? row.soil : row.solar);
+function buildStationMarkers(rows, meta, key) {
+  const values = rows.map(row => Number(row[meta.field])).filter(Number.isFinite);
+  const range = getRange(values);
+
+  return rows.map(row => {
+    const value = Number(row[meta.field]);
     if (!Number.isFinite(value)) return null;
-    const color = isSoil ? soilColor(value) : solarColor(value);
-    const label = isSoil ? Math.round(value * 100) : Math.round(value);
-    const unit = isSoil ? '% saturation' : 'W/m2';
+    const color = colorFromScale(value, range.min, range.max, meta.colors);
+    const label = key === 'soil' ? Math.round(value * 100) : Math.round(value);
     const icon = L.divIcon({
       className: '',
-      html: `<div class="meteo-dot" style="background:${color}">${label}</div>`,
+      html: `<div class="meteo-dot meteo-dot-${key}" style="background:${color}">${label}</div>`,
       iconSize: [24, 24],
       iconAnchor: [12, 12]
     });
     return L.marker([row.lat, row.lng], { icon }).bindPopup(`
-      <div class="popup-name">${row.name} ${isSoil ? 'soil saturation' : 'solar radiation'}</div>
+      <div class="popup-name">${row.name} ${meta.label.toLowerCase()}</div>
       <div class="popup-risks">
-        <div class="popup-risk-item"><span style="color:${color}">${isSoil ? formatMetric(value * 100, unit) : formatMetric(value, unit)}</span></div>
+        <div class="popup-risk-item"><span style="color:${color}">${meta.format ? meta.format(value) : formatMetric(value, meta.unit)}</span></div>
+        <div class="popup-risk-item"><span style="color:var(--muted)">${key === 'elevation' ? 'Sampled point; no DEM/hillshade source loaded' : 'Station sample fallback'}</span></div>
       </div>
     `, { maxWidth: 240, className: 'kchm-popup' });
-  }).filter(Boolean)).addTo(map);
+  }).filter(Boolean);
 }
 
 async function loadKenyaEarthquakes() {
@@ -1053,11 +1344,13 @@ function updateEarthquakeLayer() {
   if (!layerState.liveEarthquake || !earthquakeData) return;
 
   dynamicLayers.liveEarthquake = L.layerGroup(earthquakeData.map(feature => {
-    const [lng, lat] = feature.geometry.coordinates;
+    const [lng, lat, depthKm] = feature.geometry.coordinates;
     const mag = Number(feature.properties?.mag) || 0;
+    const depth = Number(depthKm);
+    const color = depthColor(depth);
     const icon = L.divIcon({
       className: '',
-      html: `<div class="quake-marker" style="transform:scale(${Math.max(0.75, Math.min(1.7, 0.65 + mag / 4))})">${mag.toFixed(1)}</div>`,
+      html: `<div class="quake-marker" style="background:${color.fill};border-color:${color.stroke};transform:scale(${Math.max(0.75, Math.min(1.7, 0.65 + mag / 4))})">${mag.toFixed(1)}</div>`,
       iconSize: [28, 28],
       iconAnchor: [14, 14]
     });
@@ -1066,6 +1359,7 @@ function updateEarthquakeLayer() {
       <div class="popup-meta"><span>${feature.properties?.place || 'Kenya region'}</span></div>
       <div class="popup-risks">
         <div class="popup-risk-item"><span style="color:#7c3aed">Magnitude: ${mag.toFixed(1)}</span></div>
+        <div class="popup-risk-item"><span style="color:${color.stroke}">Depth: ${Number.isFinite(depth) ? formatMetric(depth, 'km') : 'No data'}</span></div>
         <div class="popup-risk-item"><span>${new Date(feature.properties?.time || Date.now()).toLocaleString()}</span></div>
       </div>
     `, { maxWidth: 260, className: 'kchm-popup' });
@@ -1183,6 +1477,15 @@ function windColor(speed) {
   if (speed >= 25) return '#0891b2';
   if (speed >= 12) return '#06b6d4';
   return '#67e8f9';
+}
+
+function depthColor(depthKm) {
+  const depth = Number(depthKm);
+  if (!Number.isFinite(depth)) return { fill: '#a78bfa', stroke: '#6d28d9' };
+  if (depth >= 100) return { fill: '#7f1d1d', stroke: '#450a0a' };
+  if (depth >= 70) return { fill: '#dc2626', stroke: '#991b1b' };
+  if (depth >= 30) return { fill: '#fb923c', stroke: '#c2410c' };
+  return { fill: '#facc15', stroke: '#a16207' };
 }
 
 function soilColor(value) {

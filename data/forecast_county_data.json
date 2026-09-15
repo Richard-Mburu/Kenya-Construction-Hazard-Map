@@ -1,0 +1,7281 @@
+{
+  "periods": [
+    {
+      "file": "20250106_to_20250113_fcst.csv",
+      "start": "20250106",
+      "end": "20250113",
+      "counties": {
+        "1": {
+          "rain": 0.46,
+          "tmin": 26.44,
+          "tmax": 28.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 2.85,
+          "tmin": 20.09,
+          "tmax": 31.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 0.92,
+          "tmin": 23.58,
+          "tmax": 30.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 0.75,
+          "tmin": 20.05,
+          "tmax": 33.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.12,
+          "tmin": 24,
+          "tmax": 29.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 2.75,
+          "tmin": 15.7,
+          "tmax": 29.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.51,
+          "tmin": 18.58,
+          "tmax": 33.89,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.05,
+          "tmin": 17.61,
+          "tmax": 34.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0,
+          "tmin": 15.46,
+          "tmax": 31.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 0.01,
+          "tmin": 16.81,
+          "tmax": 30.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.03,
+          "tmin": 17.7,
+          "tmax": 31.05,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 2,
+          "tmin": 10.99,
+          "tmax": 24.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.12,
+          "tmin": 13.77,
+          "tmax": 27.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 0.12,
+          "tmin": 11.95,
+          "tmax": 27.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.63,
+          "tmin": 15.22,
+          "tmax": 29.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 0.36,
+          "tmin": 12.24,
+          "tmax": 27.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.56,
+          "tmin": 13.63,
+          "tmax": 29.1,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 3.24,
+          "tmin": 10.37,
+          "tmax": 24.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 9.53,
+          "tmin": 7.63,
+          "tmax": 21.22,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 10.89,
+          "tmin": 8.16,
+          "tmax": 22.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 0.14,
+          "tmin": 8.43,
+          "tmax": 22.51,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 5.08,
+          "tmin": 11.36,
+          "tmax": 24.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 0.02,
+          "tmin": 19.59,
+          "tmax": 33.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0,
+          "tmin": 16.66,
+          "tmax": 32.5,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.01,
+          "tmin": 17.92,
+          "tmax": 30.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 0.63,
+          "tmin": 13.05,
+          "tmax": 26.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 0.36,
+          "tmin": 14.35,
+          "tmax": 28.75,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 0.17,
+          "tmin": 11.74,
+          "tmax": 25.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 1.59,
+          "tmin": 14.51,
+          "tmax": 28.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0.07,
+          "tmin": 14.43,
+          "tmax": 27.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 0.08,
+          "tmin": 11.9,
+          "tmax": 26.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 1.19,
+          "tmin": 10.29,
+          "tmax": 22.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 2.85,
+          "tmin": 13.01,
+          "tmax": 27.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 5.61,
+          "tmin": 15.64,
+          "tmax": 28.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 1.84,
+          "tmin": 17.74,
+          "tmax": 29.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 3.48,
+          "tmin": 13.48,
+          "tmax": 26.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 0.93,
+          "tmin": 15.88,
+          "tmax": 31.34,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 5.46,
+          "tmin": 16.27,
+          "tmax": 30.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 0.46,
+          "tmin": 15.41,
+          "tmax": 32.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 0.61,
+          "tmin": 18.1,
+          "tmax": 32.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 0.74,
+          "tmin": 23.91,
+          "tmax": 25.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 0.38,
+          "tmin": 19.26,
+          "tmax": 28.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 1.09,
+          "tmin": 23.15,
+          "tmax": 25.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 9.46,
+          "tmin": 19.66,
+          "tmax": 28.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 3.29,
+          "tmin": 16.9,
+          "tmax": 29.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 2.24,
+          "tmin": 18.28,
+          "tmax": 29.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 0.76,
+          "tmin": 14.51,
+          "tmax": 29.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250203_to_20250210_fcst.csv",
+      "start": "20250203",
+      "end": "20250210",
+      "counties": {
+        "1": {
+          "rain": 0.38,
+          "tmin": 25.75,
+          "tmax": 28.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 0.42,
+          "tmin": 20.78,
+          "tmax": 32.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 0.59,
+          "tmin": 22.75,
+          "tmax": 30.86,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 0.5,
+          "tmin": 19.54,
+          "tmax": 35.3,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.14,
+          "tmin": 23.48,
+          "tmax": 29.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 2.55,
+          "tmin": 17.1,
+          "tmax": 30.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.18,
+          "tmin": 18.15,
+          "tmax": 35.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.01,
+          "tmin": 17,
+          "tmax": 35.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0,
+          "tmin": 15.34,
+          "tmax": 33,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 0,
+          "tmin": 17.23,
+          "tmax": 32.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0,
+          "tmin": 17.54,
+          "tmax": 32.37,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 0.01,
+          "tmin": 12.17,
+          "tmax": 25.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0,
+          "tmin": 14.79,
+          "tmax": 28.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 0.01,
+          "tmin": 13.2,
+          "tmax": 28.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.05,
+          "tmin": 15.91,
+          "tmax": 31.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 0,
+          "tmin": 13.84,
+          "tmax": 27.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.1,
+          "tmin": 15.71,
+          "tmax": 29.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 0,
+          "tmin": 11.83,
+          "tmax": 25.06,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 0.1,
+          "tmin": 8.95,
+          "tmax": 21.89,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 1.98,
+          "tmin": 10.07,
+          "tmax": 23.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 0,
+          "tmin": 9.53,
+          "tmax": 23.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 0.25,
+          "tmin": 12.47,
+          "tmax": 25.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 0.01,
+          "tmin": 21.14,
+          "tmax": 35.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0,
+          "tmin": 17.63,
+          "tmax": 33.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0,
+          "tmin": 19.02,
+          "tmax": 31.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 0.06,
+          "tmin": 13.74,
+          "tmax": 27.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 0,
+          "tmin": 15.52,
+          "tmax": 30.1,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 0,
+          "tmin": 12.74,
+          "tmax": 26.08,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 0.01,
+          "tmin": 15.6,
+          "tmax": 30.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0,
+          "tmin": 15.99,
+          "tmax": 28.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 0,
+          "tmin": 13.71,
+          "tmax": 26.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 0.04,
+          "tmin": 11.17,
+          "tmax": 23.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 0.97,
+          "tmin": 14.29,
+          "tmax": 28.36,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 6.18,
+          "tmin": 17.05,
+          "tmax": 28.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 0,
+          "tmin": 18.66,
+          "tmax": 30.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 1.04,
+          "tmin": 14.37,
+          "tmax": 28.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 0.09,
+          "tmin": 16.77,
+          "tmax": 32.51,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 0.36,
+          "tmin": 16.98,
+          "tmax": 31.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 0.21,
+          "tmin": 16.11,
+          "tmax": 33.96,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 0.34,
+          "tmin": 18.81,
+          "tmax": 33.62,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 0.01,
+          "tmin": 23.75,
+          "tmax": 25.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 0,
+          "tmin": 19.73,
+          "tmax": 28.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 0,
+          "tmin": 23.24,
+          "tmax": 25.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 4.13,
+          "tmin": 19.91,
+          "tmax": 28.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 0.14,
+          "tmin": 17.5,
+          "tmax": 29.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 0.01,
+          "tmin": 19.03,
+          "tmax": 30.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 0,
+          "tmin": 16.65,
+          "tmax": 29.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250303_to_20250310_fcst.csv",
+      "start": "20250303",
+      "end": "20250310",
+      "counties": {
+        "1": {
+          "rain": 0.93,
+          "tmin": 26.39,
+          "tmax": 28.75,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 2.3,
+          "tmin": 20.17,
+          "tmax": 32.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 0.82,
+          "tmin": 23.86,
+          "tmax": 32.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 0.87,
+          "tmin": 22.24,
+          "tmax": 36.81,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.22,
+          "tmin": 24.67,
+          "tmax": 29.89,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 5.29,
+          "tmin": 15.63,
+          "tmax": 31.52,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.41,
+          "tmin": 21.38,
+          "tmax": 36.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.13,
+          "tmin": 21.59,
+          "tmax": 35.74,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0.05,
+          "tmin": 18.96,
+          "tmax": 33.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 1.07,
+          "tmin": 20.05,
+          "tmax": 32.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0,
+          "tmin": 20.32,
+          "tmax": 34.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 2.57,
+          "tmin": 12.63,
+          "tmax": 27.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.03,
+          "tmin": 15.45,
+          "tmax": 30.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 1.34,
+          "tmin": 13.62,
+          "tmax": 29.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.19,
+          "tmin": 16.96,
+          "tmax": 33.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 2.39,
+          "tmin": 13.85,
+          "tmax": 29.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.86,
+          "tmin": 15.78,
+          "tmax": 31.2,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 2.89,
+          "tmin": 11.36,
+          "tmax": 26.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 5.75,
+          "tmin": 8.53,
+          "tmax": 23.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 31.76,
+          "tmin": 9.52,
+          "tmax": 25.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 0.49,
+          "tmin": 9.73,
+          "tmax": 25.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 7.22,
+          "tmin": 11.77,
+          "tmax": 26.74,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 0.78,
+          "tmin": 22.77,
+          "tmax": 35.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0.16,
+          "tmin": 18.42,
+          "tmax": 34.56,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.26,
+          "tmin": 19.79,
+          "tmax": 32.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 1.89,
+          "tmin": 14.13,
+          "tmax": 29.3,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 1.33,
+          "tmin": 15.3,
+          "tmax": 31.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 1.39,
+          "tmin": 12.69,
+          "tmax": 27.37,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 2.19,
+          "tmin": 15.52,
+          "tmax": 31.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0.28,
+          "tmin": 15.75,
+          "tmax": 29.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 0.04,
+          "tmin": 13.79,
+          "tmax": 28.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 2.27,
+          "tmin": 10.69,
+          "tmax": 25.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 3.38,
+          "tmin": 13.39,
+          "tmax": 29.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 9.67,
+          "tmin": 16.44,
+          "tmax": 30.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 2.1,
+          "tmin": 18.33,
+          "tmax": 32.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 4.83,
+          "tmin": 13.95,
+          "tmax": 30.32,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 1.46,
+          "tmin": 16.92,
+          "tmax": 34.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 5.21,
+          "tmin": 16.85,
+          "tmax": 33.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 2.67,
+          "tmin": 17.23,
+          "tmax": 35.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 3.21,
+          "tmin": 19.61,
+          "tmax": 34.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 2.65,
+          "tmin": 24.1,
+          "tmax": 27.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 2.48,
+          "tmin": 19.99,
+          "tmax": 31.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 1.4,
+          "tmin": 23.28,
+          "tmax": 26.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 8.48,
+          "tmin": 19.79,
+          "tmax": 31.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 5.39,
+          "tmin": 16.98,
+          "tmax": 32.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 3.95,
+          "tmin": 19.05,
+          "tmax": 32.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 1.1,
+          "tmin": 15.52,
+          "tmax": 30.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250407_to_20250414_fcst.csv",
+      "start": "20250407",
+      "end": "20250414",
+      "counties": {
+        "1": {
+          "rain": 2.18,
+          "tmin": 27.26,
+          "tmax": 29.07,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 2.71,
+          "tmin": 21,
+          "tmax": 29.49,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 11.98,
+          "tmin": 24.89,
+          "tmax": 30.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 6.93,
+          "tmin": 23.75,
+          "tmax": 33.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 5.11,
+          "tmin": 26.42,
+          "tmax": 30.33,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 5.73,
+          "tmin": 16.49,
+          "tmax": 27.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 2.5,
+          "tmin": 24.03,
+          "tmax": 33.96,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 6.29,
+          "tmin": 24.29,
+          "tmax": 33.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 22.34,
+          "tmin": 21.19,
+          "tmax": 31.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 34.57,
+          "tmin": 20.63,
+          "tmax": 30.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.35,
+          "tmin": 22.15,
+          "tmax": 32.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 19.3,
+          "tmin": 14.33,
+          "tmax": 25.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 2.34,
+          "tmin": 16.99,
+          "tmax": 26.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 32.99,
+          "tmin": 15.58,
+          "tmax": 25.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 1.31,
+          "tmin": 18.52,
+          "tmax": 28.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 15.34,
+          "tmin": 14.94,
+          "tmax": 27.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 4.96,
+          "tmin": 16.62,
+          "tmax": 28.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 19.95,
+          "tmin": 12.88,
+          "tmax": 25.49,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 70.01,
+          "tmin": 9.56,
+          "tmax": 21.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 152.92,
+          "tmin": 10.81,
+          "tmax": 22.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 56.66,
+          "tmin": 10.96,
+          "tmax": 21.96,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 82.26,
+          "tmin": 11.86,
+          "tmax": 23.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 30.62,
+          "tmin": 21.83,
+          "tmax": 34.36,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 24.91,
+          "tmin": 18.87,
+          "tmax": 32.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.44,
+          "tmin": 21.08,
+          "tmax": 31.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 43.51,
+          "tmin": 14.02,
+          "tmax": 25.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 31.97,
+          "tmin": 15.07,
+          "tmax": 28.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 10.27,
+          "tmin": 13.11,
+          "tmax": 25.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 54.49,
+          "tmin": 15.24,
+          "tmax": 27.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 1.3,
+          "tmin": 16.99,
+          "tmax": 28.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 1.82,
+          "tmin": 15.27,
+          "tmax": 27.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 16.91,
+          "tmin": 10.28,
+          "tmax": 22.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 33.63,
+          "tmin": 13.26,
+          "tmax": 26.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 10.27,
+          "tmin": 15.94,
+          "tmax": 27.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 69.55,
+          "tmin": 16.91,
+          "tmax": 28.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 72.55,
+          "tmin": 13.41,
+          "tmax": 26.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 73.39,
+          "tmin": 17.03,
+          "tmax": 29.9,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 83.74,
+          "tmin": 17.23,
+          "tmax": 28.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 76.5,
+          "tmin": 17.83,
+          "tmax": 30.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 51.45,
+          "tmin": 20.15,
+          "tmax": 31.36,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 67.2,
+          "tmin": 22.26,
+          "tmax": 26.43,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 43.81,
+          "tmin": 18.59,
+          "tmax": 27.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 92.18,
+          "tmin": 20.01,
+          "tmax": 25.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 33.96,
+          "tmin": 19.59,
+          "tmax": 28.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 83.95,
+          "tmin": 16.95,
+          "tmax": 28.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 59.7,
+          "tmin": 17.78,
+          "tmax": 28.36,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 31.18,
+          "tmin": 16.08,
+          "tmax": 27.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250505_to_20250512_fcst.csv",
+      "start": "20250505",
+      "end": "20250512",
+      "counties": {
+        "1": {
+          "rain": 6.88,
+          "tmin": 25.54,
+          "tmax": 28.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 4.03,
+          "tmin": 19.73,
+          "tmax": 27.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 35.98,
+          "tmin": 23.65,
+          "tmax": 30.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 5.88,
+          "tmin": 22.59,
+          "tmax": 33.08,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 150.98,
+          "tmin": 24.36,
+          "tmax": 29.86,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 7.95,
+          "tmin": 15.33,
+          "tmax": 25.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 2.7,
+          "tmin": 22.76,
+          "tmax": 33.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 14.04,
+          "tmin": 22.86,
+          "tmax": 33.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 16.73,
+          "tmin": 20.53,
+          "tmax": 30.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 23.52,
+          "tmin": 20.19,
+          "tmax": 29.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 15.93,
+          "tmin": 21.12,
+          "tmax": 31.32,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 46.36,
+          "tmin": 14.07,
+          "tmax": 24,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 42.33,
+          "tmin": 16.42,
+          "tmax": 25.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 96.17,
+          "tmin": 14.98,
+          "tmax": 24.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 6.25,
+          "tmin": 17.62,
+          "tmax": 28.19,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 53.55,
+          "tmin": 14.24,
+          "tmax": 24.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 10.9,
+          "tmin": 15.8,
+          "tmax": 26.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 109.01,
+          "tmin": 12.43,
+          "tmax": 22.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 89.73,
+          "tmin": 9.77,
+          "tmax": 19.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 171.91,
+          "tmin": 11.16,
+          "tmax": 19.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 61.87,
+          "tmin": 11.49,
+          "tmax": 20.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 104.13,
+          "tmin": 12.29,
+          "tmax": 20.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 6.67,
+          "tmin": 22.32,
+          "tmax": 33.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 26.12,
+          "tmin": 18.12,
+          "tmax": 30.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 21.14,
+          "tmin": 19.55,
+          "tmax": 30.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 81.72,
+          "tmin": 13.82,
+          "tmax": 24.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 91.97,
+          "tmin": 14.59,
+          "tmax": 27.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 82.93,
+          "tmin": 12.51,
+          "tmax": 24.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 100.98,
+          "tmin": 14.51,
+          "tmax": 27.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 42.85,
+          "tmin": 15.37,
+          "tmax": 26.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 52.21,
+          "tmin": 14.27,
+          "tmax": 25.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 87.11,
+          "tmin": 10.17,
+          "tmax": 21.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 80.08,
+          "tmin": 13.51,
+          "tmax": 24.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 14.63,
+          "tmin": 15.53,
+          "tmax": 25.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 86.35,
+          "tmin": 16.74,
+          "tmax": 27.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 109.4,
+          "tmin": 13.45,
+          "tmax": 24.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 100.17,
+          "tmin": 16.34,
+          "tmax": 28.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 43.42,
+          "tmin": 16.36,
+          "tmax": 27.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 85.97,
+          "tmin": 17.47,
+          "tmax": 29.33,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 42.19,
+          "tmin": 19.7,
+          "tmax": 30.3,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 62.02,
+          "tmin": 21.21,
+          "tmax": 25.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 26.75,
+          "tmin": 18.05,
+          "tmax": 26.5,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 42.05,
+          "tmin": 19.68,
+          "tmax": 24.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 37.65,
+          "tmin": 18.86,
+          "tmax": 27.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 96.45,
+          "tmin": 16.52,
+          "tmax": 27.15,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 46.37,
+          "tmin": 17.38,
+          "tmax": 27.19,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 55.07,
+          "tmin": 15.89,
+          "tmax": 25.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250602_to_20250609_fcst.csv",
+      "start": "20250602",
+      "end": "20250609",
+      "counties": {
+        "1": {
+          "rain": 1.69,
+          "tmin": 25.73,
+          "tmax": 27.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 1.56,
+          "tmin": 18.79,
+          "tmax": 27.44,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 6.3,
+          "tmin": 23.29,
+          "tmax": 29.22,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 3.84,
+          "tmin": 20.67,
+          "tmax": 32.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 9.37,
+          "tmin": 24.92,
+          "tmax": 28.32,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 0.91,
+          "tmin": 13.83,
+          "tmax": 26.06,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.96,
+          "tmin": 20.73,
+          "tmax": 32.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 1.87,
+          "tmin": 20.69,
+          "tmax": 32.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0.87,
+          "tmin": 19.24,
+          "tmax": 30.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 2.08,
+          "tmin": 19.1,
+          "tmax": 29.2,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.04,
+          "tmin": 19.43,
+          "tmax": 31.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 7.47,
+          "tmin": 12.85,
+          "tmax": 24.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.38,
+          "tmin": 14.97,
+          "tmax": 25.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 10.4,
+          "tmin": 12.98,
+          "tmax": 23.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.06,
+          "tmin": 15.89,
+          "tmax": 28.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 1.05,
+          "tmin": 11.86,
+          "tmax": 23.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.22,
+          "tmin": 13.97,
+          "tmax": 26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 24.92,
+          "tmin": 11.73,
+          "tmax": 22.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 17.76,
+          "tmin": 8.46,
+          "tmax": 19.19,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 54.65,
+          "tmin": 9.14,
+          "tmax": 19.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 7.38,
+          "tmin": 9.31,
+          "tmax": 19.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 31.92,
+          "tmin": 10.28,
+          "tmax": 20.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 1.09,
+          "tmin": 21.64,
+          "tmax": 32.56,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 2.53,
+          "tmin": 17.4,
+          "tmax": 30.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.49,
+          "tmin": 19.29,
+          "tmax": 29.96,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 8.65,
+          "tmin": 12.97,
+          "tmax": 23.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 9.23,
+          "tmin": 13.44,
+          "tmax": 25.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 3.22,
+          "tmin": 11.25,
+          "tmax": 22.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 40.17,
+          "tmin": 14.28,
+          "tmax": 25.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 1.21,
+          "tmin": 15.75,
+          "tmax": 26.5,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 1.37,
+          "tmin": 13.75,
+          "tmax": 25.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 15.72,
+          "tmin": 9.89,
+          "tmax": 20.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 12.7,
+          "tmin": 12.21,
+          "tmax": 24.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 1.06,
+          "tmin": 14.44,
+          "tmax": 25.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 53.24,
+          "tmin": 16.34,
+          "tmax": 26.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 26.09,
+          "tmin": 12.82,
+          "tmax": 24.03,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 56.02,
+          "tmin": 15.54,
+          "tmax": 27.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 54.26,
+          "tmin": 15.48,
+          "tmax": 27.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 31.82,
+          "tmin": 16.45,
+          "tmax": 28.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 10.17,
+          "tmin": 18.91,
+          "tmax": 30,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 4.79,
+          "tmin": 22.96,
+          "tmax": 25.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 18.85,
+          "tmin": 18.29,
+          "tmax": 26.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 14.2,
+          "tmin": 21.86,
+          "tmax": 24.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 5.11,
+          "tmin": 18.69,
+          "tmax": 28.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 52.9,
+          "tmin": 15.57,
+          "tmax": 26.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 38.88,
+          "tmin": 16.84,
+          "tmax": 26.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 8.68,
+          "tmin": 13.93,
+          "tmax": 25.15,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250707_to_20250714_fcst.csv",
+      "start": "20250707",
+      "end": "20250714",
+      "counties": {
+        "1": {
+          "rain": 0.24,
+          "tmin": 24.45,
+          "tmax": 26.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 0.6,
+          "tmin": 17.3,
+          "tmax": 26.62,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 0.67,
+          "tmin": 21.77,
+          "tmax": 27.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 0.45,
+          "tmin": 19.48,
+          "tmax": 31.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 2.56,
+          "tmin": 23.49,
+          "tmax": 27.24,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 0.35,
+          "tmin": 12.33,
+          "tmax": 25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.18,
+          "tmin": 19.44,
+          "tmax": 31.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.45,
+          "tmin": 19.09,
+          "tmax": 31.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0.39,
+          "tmin": 18.22,
+          "tmax": 29.51,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 1.8,
+          "tmin": 17.96,
+          "tmax": 27.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.09,
+          "tmin": 18.38,
+          "tmax": 30.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 4.6,
+          "tmin": 12.1,
+          "tmax": 23.05,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.72,
+          "tmin": 13.83,
+          "tmax": 25.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 10.58,
+          "tmin": 12.52,
+          "tmax": 23.06,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.16,
+          "tmin": 14.56,
+          "tmax": 27.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 1.86,
+          "tmin": 11.21,
+          "tmax": 23.06,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.14,
+          "tmin": 12.77,
+          "tmax": 24.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 70,
+          "tmin": 10.88,
+          "tmax": 22.5,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 32.2,
+          "tmin": 8.18,
+          "tmax": 18.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 35.55,
+          "tmin": 9.42,
+          "tmax": 17.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 10.05,
+          "tmin": 9.14,
+          "tmax": 17.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 28.2,
+          "tmin": 9.45,
+          "tmax": 19.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 21.81,
+          "tmin": 19.77,
+          "tmax": 31.13,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 75.38,
+          "tmin": 16.79,
+          "tmax": 28.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 5.84,
+          "tmin": 17.58,
+          "tmax": 28.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 119.71,
+          "tmin": 12.51,
+          "tmax": 22.67,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 118.13,
+          "tmin": 13.39,
+          "tmax": 24.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 88.12,
+          "tmin": 11.54,
+          "tmax": 21.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 105.49,
+          "tmin": 14.07,
+          "tmax": 25.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 34.51,
+          "tmin": 14.71,
+          "tmax": 25.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 13.58,
+          "tmin": 12.5,
+          "tmax": 24.56,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 61.39,
+          "tmin": 9.55,
+          "tmax": 19.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 15.89,
+          "tmin": 11.73,
+          "tmax": 23.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 0.55,
+          "tmin": 13.28,
+          "tmax": 25.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 68.55,
+          "tmin": 15.99,
+          "tmax": 26.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 41.4,
+          "tmin": 12.74,
+          "tmax": 23.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 83,
+          "tmin": 15.75,
+          "tmax": 27.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 38.69,
+          "tmin": 16.01,
+          "tmax": 27.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 65.43,
+          "tmin": 16.39,
+          "tmax": 28.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 30.72,
+          "tmin": 18.21,
+          "tmax": 29.03,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 28.42,
+          "tmin": 20.96,
+          "tmax": 24.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 28.95,
+          "tmin": 17.73,
+          "tmax": 26.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 6.92,
+          "tmin": 19.95,
+          "tmax": 24.44,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 6.08,
+          "tmin": 17.23,
+          "tmax": 27.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 42.71,
+          "tmin": 15.55,
+          "tmax": 26.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 48.09,
+          "tmin": 16.75,
+          "tmax": 26.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 9.02,
+          "tmin": 12.49,
+          "tmax": 25.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250804_to_20250811_fcst.csv",
+      "start": "20250804",
+      "end": "20250811",
+      "counties": {
+        "1": {
+          "rain": 1.91,
+          "tmin": 23.84,
+          "tmax": 25.8,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 3.14,
+          "tmin": 16.49,
+          "tmax": 27.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 4.49,
+          "tmin": 20.71,
+          "tmax": 27.44,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 2.76,
+          "tmin": 18.59,
+          "tmax": 30.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 3.29,
+          "tmin": 22.95,
+          "tmax": 26.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 0.79,
+          "tmin": 11.7,
+          "tmax": 25.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.82,
+          "tmin": 19.13,
+          "tmax": 31.22,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.74,
+          "tmin": 18.64,
+          "tmax": 31.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0.65,
+          "tmin": 17.56,
+          "tmax": 29.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 1.94,
+          "tmin": 17.21,
+          "tmax": 28.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.26,
+          "tmin": 17.69,
+          "tmax": 30.43,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 10.86,
+          "tmin": 11.64,
+          "tmax": 23.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 1.33,
+          "tmin": 12.48,
+          "tmax": 25.33,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 11.39,
+          "tmin": 10.81,
+          "tmax": 23.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.79,
+          "tmin": 13.32,
+          "tmax": 27.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 1.59,
+          "tmin": 10.37,
+          "tmax": 25.06,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 1.09,
+          "tmin": 11.69,
+          "tmax": 25.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 52.75,
+          "tmin": 11.04,
+          "tmax": 22.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 29.81,
+          "tmin": 8.11,
+          "tmax": 18.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 40.55,
+          "tmin": 8.13,
+          "tmax": 18.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 5.22,
+          "tmin": 7.61,
+          "tmax": 20.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 9.31,
+          "tmin": 8.87,
+          "tmax": 21.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 14.08,
+          "tmin": 19.86,
+          "tmax": 30.51,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 31.63,
+          "tmin": 16.94,
+          "tmax": 28.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 3.57,
+          "tmin": 18.25,
+          "tmax": 28.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 68.9,
+          "tmin": 12.58,
+          "tmax": 23.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 48.69,
+          "tmin": 13.29,
+          "tmax": 25.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 49.03,
+          "tmin": 11.16,
+          "tmax": 22.43,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 27.35,
+          "tmin": 13.88,
+          "tmax": 25.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 22.08,
+          "tmin": 15,
+          "tmax": 25.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 27.06,
+          "tmin": 12.9,
+          "tmax": 25.1,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 44.56,
+          "tmin": 9.33,
+          "tmax": 20.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 2.03,
+          "tmin": 11.45,
+          "tmax": 26.15,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 0.21,
+          "tmin": 12.94,
+          "tmax": 26.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 29.5,
+          "tmin": 16.43,
+          "tmax": 27.51,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 10.04,
+          "tmin": 12.55,
+          "tmax": 25.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 18.68,
+          "tmin": 14.77,
+          "tmax": 28.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 13.1,
+          "tmin": 15.14,
+          "tmax": 28.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 24.71,
+          "tmin": 15.52,
+          "tmax": 29.49,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 14.9,
+          "tmin": 17.35,
+          "tmax": 29.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 7.49,
+          "tmin": 21.38,
+          "tmax": 25.05,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 1.75,
+          "tmin": 17.93,
+          "tmax": 26.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 4.32,
+          "tmin": 20.84,
+          "tmax": 24.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 2.63,
+          "tmin": 17.22,
+          "tmax": 28.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 20.86,
+          "tmin": 15.89,
+          "tmax": 27.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 16.83,
+          "tmin": 17.01,
+          "tmax": 27.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 2.65,
+          "tmin": 11.65,
+          "tmax": 26.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20250901_to_20250908_fcst.csv",
+      "start": "20250901",
+      "end": "20250908",
+      "counties": {
+        "1": {
+          "rain": 0.39,
+          "tmin": 23.74,
+          "tmax": 25.86,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 0.75,
+          "tmin": 16.74,
+          "tmax": 28.81,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 1.25,
+          "tmin": 21.09,
+          "tmax": 28.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 1.05,
+          "tmin": 19.09,
+          "tmax": 32.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 2.16,
+          "tmin": 22.84,
+          "tmax": 27.2,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 0.15,
+          "tmin": 11.9,
+          "tmax": 28.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.53,
+          "tmin": 19,
+          "tmax": 32.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.45,
+          "tmin": 18.53,
+          "tmax": 32.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0.46,
+          "tmin": 17.65,
+          "tmax": 31.15,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 0.96,
+          "tmin": 17.68,
+          "tmax": 29.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.01,
+          "tmin": 18.08,
+          "tmax": 31.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 5.45,
+          "tmin": 12.53,
+          "tmax": 25.07,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0,
+          "tmin": 13.25,
+          "tmax": 27.37,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 0.83,
+          "tmin": 11.21,
+          "tmax": 26.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.14,
+          "tmin": 13.56,
+          "tmax": 29.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 0.07,
+          "tmin": 10.95,
+          "tmax": 27.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.08,
+          "tmin": 11.98,
+          "tmax": 27.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 25.61,
+          "tmin": 11.31,
+          "tmax": 23.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 11.57,
+          "tmin": 8.22,
+          "tmax": 20.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 12.6,
+          "tmin": 7.32,
+          "tmax": 20.52,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 0.99,
+          "tmin": 7.79,
+          "tmax": 22.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 2.4,
+          "tmin": 9.51,
+          "tmax": 23.08,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 4.75,
+          "tmin": 20.65,
+          "tmax": 31.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 8.59,
+          "tmin": 17.6,
+          "tmax": 30.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 2.29,
+          "tmin": 18.96,
+          "tmax": 30.07,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 46.91,
+          "tmin": 13.02,
+          "tmax": 24.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 31.19,
+          "tmin": 14.01,
+          "tmax": 26.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 27.84,
+          "tmin": 11.87,
+          "tmax": 23.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 22.6,
+          "tmin": 14.31,
+          "tmax": 27.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 5.91,
+          "tmin": 15.64,
+          "tmax": 26.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 14.8,
+          "tmin": 12.93,
+          "tmax": 26.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 19.76,
+          "tmin": 9.77,
+          "tmax": 21.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 0.91,
+          "tmin": 12.11,
+          "tmax": 26.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 0.01,
+          "tmin": 13.7,
+          "tmax": 28.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 18.98,
+          "tmin": 17.04,
+          "tmax": 28.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 2.77,
+          "tmin": 12.79,
+          "tmax": 26.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 23.64,
+          "tmin": 15.7,
+          "tmax": 29.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 11.32,
+          "tmin": 15.58,
+          "tmax": 28.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 15.01,
+          "tmin": 16.19,
+          "tmax": 30.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 2.11,
+          "tmin": 17.88,
+          "tmax": 30.67,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 0.2,
+          "tmin": 21.49,
+          "tmax": 24.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 0.96,
+          "tmin": 18.29,
+          "tmax": 27.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 0.77,
+          "tmin": 21.47,
+          "tmax": 24.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 0.55,
+          "tmin": 18,
+          "tmax": 29.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 12.75,
+          "tmin": 16.17,
+          "tmax": 28.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 3.57,
+          "tmin": 17.68,
+          "tmax": 27.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 0.11,
+          "tmin": 12.68,
+          "tmax": 27.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20251006_to_20251013_fcst.csv",
+      "start": "20251006",
+      "end": "20251013",
+      "counties": {
+        "1": {
+          "rain": 3.58,
+          "tmin": 24.63,
+          "tmax": 26.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 3.77,
+          "tmin": 18.78,
+          "tmax": 29.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 10.13,
+          "tmin": 22.5,
+          "tmax": 28.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 5.74,
+          "tmin": 20.49,
+          "tmax": 32.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 2.76,
+          "tmin": 23.66,
+          "tmax": 27.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 1.97,
+          "tmin": 13.57,
+          "tmax": 28.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 1.59,
+          "tmin": 20.76,
+          "tmax": 33.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 1.08,
+          "tmin": 20.21,
+          "tmax": 33.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 3.37,
+          "tmin": 18.84,
+          "tmax": 30.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 4.39,
+          "tmin": 18.41,
+          "tmax": 29.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.16,
+          "tmin": 18.74,
+          "tmax": 32.44,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 6.43,
+          "tmin": 12.64,
+          "tmax": 25.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.35,
+          "tmin": 14.59,
+          "tmax": 27.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 12.7,
+          "tmin": 13.34,
+          "tmax": 26.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.77,
+          "tmin": 15.03,
+          "tmax": 29.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 0.87,
+          "tmin": 12.73,
+          "tmax": 26.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.71,
+          "tmin": 13.27,
+          "tmax": 27.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 9.85,
+          "tmin": 11.46,
+          "tmax": 24.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 22.19,
+          "tmin": 8.54,
+          "tmax": 19.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 54.64,
+          "tmin": 9.41,
+          "tmax": 20.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 15.61,
+          "tmin": 9.44,
+          "tmax": 21.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 13.22,
+          "tmin": 10.56,
+          "tmax": 22.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 1.26,
+          "tmin": 20.84,
+          "tmax": 32.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 1.07,
+          "tmin": 17.35,
+          "tmax": 31.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.02,
+          "tmin": 19.03,
+          "tmax": 31.07,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 8.28,
+          "tmin": 12.68,
+          "tmax": 24.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 0.43,
+          "tmin": 13.46,
+          "tmax": 27.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 0.45,
+          "tmin": 11.48,
+          "tmax": 24.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 3.5,
+          "tmin": 13.73,
+          "tmax": 28.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0.12,
+          "tmin": 15.47,
+          "tmax": 27.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 0.21,
+          "tmin": 13.39,
+          "tmax": 26.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 4.06,
+          "tmin": 9.56,
+          "tmax": 22.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 1.29,
+          "tmin": 13.1,
+          "tmax": 27.43,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 0.93,
+          "tmin": 15.23,
+          "tmax": 28.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 7.88,
+          "tmin": 16.83,
+          "tmax": 29.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 8.44,
+          "tmin": 13.43,
+          "tmax": 27.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 3.13,
+          "tmin": 15.65,
+          "tmax": 30.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 13.95,
+          "tmin": 15.91,
+          "tmax": 30.49,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 11.95,
+          "tmin": 15.91,
+          "tmax": 31.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 9.14,
+          "tmin": 18.38,
+          "tmax": 31.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 2.88,
+          "tmin": 22.68,
+          "tmax": 25.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 4.54,
+          "tmin": 18.97,
+          "tmax": 29.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 2.37,
+          "tmin": 22.43,
+          "tmax": 25.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 1.5,
+          "tmin": 19.82,
+          "tmax": 29.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 8.03,
+          "tmin": 16.53,
+          "tmax": 30.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 13.75,
+          "tmin": 17.77,
+          "tmax": 29.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 2.62,
+          "tmin": 14.28,
+          "tmax": 27.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20251110_to_20251117_fcst.csv",
+      "start": "20251110",
+      "end": "20251117",
+      "counties": {
+        "1": {
+          "rain": 1.94,
+          "tmin": 25.66,
+          "tmax": 27.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 1.26,
+          "tmin": 19.74,
+          "tmax": 31.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 3.17,
+          "tmin": 23.69,
+          "tmax": 30.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 1.41,
+          "tmin": 22.37,
+          "tmax": 33.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.25,
+          "tmin": 24.57,
+          "tmax": 29.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 1.64,
+          "tmin": 16.01,
+          "tmax": 29.89,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.59,
+          "tmin": 21.96,
+          "tmax": 33.2,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 1.77,
+          "tmin": 21.84,
+          "tmax": 33.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 1.17,
+          "tmin": 18.51,
+          "tmax": 31.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 1.14,
+          "tmin": 19.31,
+          "tmax": 29.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.15,
+          "tmin": 20.75,
+          "tmax": 30.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 6.19,
+          "tmin": 12.15,
+          "tmax": 23.9,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.82,
+          "tmin": 15.64,
+          "tmax": 26.03,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 2.69,
+          "tmin": 13.85,
+          "tmax": 24.9,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.57,
+          "tmin": 17.48,
+          "tmax": 28.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 2.03,
+          "tmin": 14.14,
+          "tmax": 25.48,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 2.33,
+          "tmin": 15.94,
+          "tmax": 27.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 9.86,
+          "tmin": 10.33,
+          "tmax": 22.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 19.52,
+          "tmin": 7.73,
+          "tmax": 19.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 16.63,
+          "tmin": 8.92,
+          "tmax": 20.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 6.02,
+          "tmin": 9.55,
+          "tmax": 20.56,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 10.9,
+          "tmin": 11.02,
+          "tmax": 22.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 0.34,
+          "tmin": 21.08,
+          "tmax": 33.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0.01,
+          "tmin": 17.39,
+          "tmax": 31.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.37,
+          "tmin": 19.18,
+          "tmax": 29.89,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 1.93,
+          "tmin": 12.66,
+          "tmax": 25.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 0.69,
+          "tmin": 13.92,
+          "tmax": 26.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 0.46,
+          "tmin": 11.33,
+          "tmax": 23.43,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 5.8,
+          "tmin": 13.4,
+          "tmax": 27.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0.47,
+          "tmin": 14.94,
+          "tmax": 26.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 4.5,
+          "tmin": 12.82,
+          "tmax": 25.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 3.74,
+          "tmin": 9.79,
+          "tmax": 21.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 1.13,
+          "tmin": 12.66,
+          "tmax": 27.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 0.73,
+          "tmin": 16.08,
+          "tmax": 29.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 11.21,
+          "tmin": 16.85,
+          "tmax": 29.33,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 3.44,
+          "tmin": 12.7,
+          "tmax": 27.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 4.16,
+          "tmin": 15.32,
+          "tmax": 30.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 9.28,
+          "tmin": 15.5,
+          "tmax": 29.96,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 6.6,
+          "tmin": 15.52,
+          "tmax": 31.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 1.31,
+          "tmin": 18.24,
+          "tmax": 31.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 6.8,
+          "tmin": 23.09,
+          "tmax": 25.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 1.88,
+          "tmin": 18.34,
+          "tmax": 27.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 0.44,
+          "tmin": 22.64,
+          "tmax": 25.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 0.99,
+          "tmin": 20.14,
+          "tmax": 29.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 4.07,
+          "tmin": 15.68,
+          "tmax": 29.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 5.37,
+          "tmin": 17.16,
+          "tmax": 28.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 4.69,
+          "tmin": 15.31,
+          "tmax": 28.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20251202_to_20251208_fcst.csv",
+      "start": "20251202",
+      "end": "20251208",
+      "counties": {
+        "1": {
+          "rain": 0.34,
+          "tmin": 26.07,
+          "tmax": 28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 1.64,
+          "tmin": 19.84,
+          "tmax": 30.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 2.21,
+          "tmin": 23.69,
+          "tmax": 29.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 4.13,
+          "tmin": 22.04,
+          "tmax": 33.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.9,
+          "tmin": 24.73,
+          "tmax": 29.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 1.79,
+          "tmin": 15.87,
+          "tmax": 29.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 4.99,
+          "tmin": 21.36,
+          "tmax": 33.36,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 3.79,
+          "tmin": 19.64,
+          "tmax": 34.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0.18,
+          "tmin": 16.05,
+          "tmax": 31.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 0.31,
+          "tmin": 17.19,
+          "tmax": 30.9,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.38,
+          "tmin": 19.1,
+          "tmax": 30.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 6.46,
+          "tmin": 10.52,
+          "tmax": 23.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 1.59,
+          "tmin": 14.07,
+          "tmax": 25.24,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 0.96,
+          "tmin": 11.73,
+          "tmax": 24.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 1.75,
+          "tmin": 16.49,
+          "tmax": 27.48,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 2.38,
+          "tmin": 12.26,
+          "tmax": 25.5,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 2.4,
+          "tmin": 14.01,
+          "tmax": 27.34,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 7.78,
+          "tmin": 9.5,
+          "tmax": 23.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 19.93,
+          "tmin": 7.25,
+          "tmax": 19.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 10.97,
+          "tmin": 7.98,
+          "tmax": 20.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 3.63,
+          "tmin": 8.18,
+          "tmax": 20.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 6.85,
+          "tmin": 10.26,
+          "tmax": 23.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 0.06,
+          "tmin": 20.07,
+          "tmax": 34.03,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0.01,
+          "tmin": 16.84,
+          "tmax": 32.3,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.28,
+          "tmin": 17.63,
+          "tmax": 29.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 2.15,
+          "tmin": 12.91,
+          "tmax": 26.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 0,
+          "tmin": 15.12,
+          "tmax": 28.44,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 0.38,
+          "tmin": 11.65,
+          "tmax": 24.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 0,
+          "tmin": 14.33,
+          "tmax": 29.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0.05,
+          "tmin": 13.83,
+          "tmax": 26.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 1.86,
+          "tmin": 11.06,
+          "tmax": 25.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 0.16,
+          "tmin": 10.63,
+          "tmax": 22.32,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 1.08,
+          "tmin": 12.13,
+          "tmax": 27.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 0.74,
+          "tmin": 15.41,
+          "tmax": 29.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 0.02,
+          "tmin": 17.46,
+          "tmax": 31.07,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 0.03,
+          "tmin": 12.58,
+          "tmax": 28.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 0.02,
+          "tmin": 15.68,
+          "tmax": 32.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 0.06,
+          "tmin": 15.22,
+          "tmax": 32.56,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 1.03,
+          "tmin": 15.27,
+          "tmax": 33.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 0.01,
+          "tmin": 18.2,
+          "tmax": 33.05,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 0.01,
+          "tmin": 24.36,
+          "tmax": 26.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 0,
+          "tmin": 19.08,
+          "tmax": 31.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 0,
+          "tmin": 23.72,
+          "tmax": 26.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 0.01,
+          "tmin": 19.94,
+          "tmax": 30.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 0.12,
+          "tmin": 15.16,
+          "tmax": 31.8,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 0.04,
+          "tmin": 17.3,
+          "tmax": 31.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 1.66,
+          "tmin": 13.24,
+          "tmax": 28.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20260105_to_20260112_fcst.csv",
+      "start": "20260105",
+      "end": "20260112",
+      "counties": {
+        "1": {
+          "rain": 0.88,
+          "tmin": 26.21,
+          "tmax": 28.22,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 5.32,
+          "tmin": 21.08,
+          "tmax": 31.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 1.04,
+          "tmin": 23.54,
+          "tmax": 30.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 0.69,
+          "tmin": 20.58,
+          "tmax": 33.8,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.21,
+          "tmin": 24.08,
+          "tmax": 29.52,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 10.42,
+          "tmin": 17.06,
+          "tmax": 28.81,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.39,
+          "tmin": 18.99,
+          "tmax": 33.81,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.04,
+          "tmin": 17.64,
+          "tmax": 34.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0,
+          "tmin": 15.14,
+          "tmax": 31.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 0,
+          "tmin": 17.47,
+          "tmax": 31.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.07,
+          "tmin": 18.09,
+          "tmax": 30.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 0.81,
+          "tmin": 11.52,
+          "tmax": 23.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.03,
+          "tmin": 14.26,
+          "tmax": 26.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 0.06,
+          "tmin": 12.46,
+          "tmax": 25.67,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.26,
+          "tmin": 15.94,
+          "tmax": 28.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 0.25,
+          "tmin": 12.88,
+          "tmax": 25.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.43,
+          "tmin": 14.83,
+          "tmax": 27.62,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 1.66,
+          "tmin": 10.73,
+          "tmax": 23.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 4.74,
+          "tmin": 8.08,
+          "tmax": 20.44,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 5.15,
+          "tmin": 8.46,
+          "tmax": 21.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 0.28,
+          "tmin": 8.79,
+          "tmax": 21.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 3.07,
+          "tmin": 11.57,
+          "tmax": 23.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 0.01,
+          "tmin": 20.5,
+          "tmax": 34.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0,
+          "tmin": 16.65,
+          "tmax": 32.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0,
+          "tmin": 18.39,
+          "tmax": 29.8,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 0.63,
+          "tmin": 13.04,
+          "tmax": 26.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 0.08,
+          "tmin": 15.1,
+          "tmax": 28.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 0.12,
+          "tmin": 12.43,
+          "tmax": 24.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 0.71,
+          "tmin": 15.05,
+          "tmax": 29.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0,
+          "tmin": 14.89,
+          "tmax": 27.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 0.01,
+          "tmin": 12.62,
+          "tmax": 25.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 1.63,
+          "tmin": 10.86,
+          "tmax": 22.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 5.8,
+          "tmin": 13.61,
+          "tmax": 27.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 16.95,
+          "tmin": 16.57,
+          "tmax": 28.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 2.16,
+          "tmin": 18.27,
+          "tmax": 30.06,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 4.74,
+          "tmin": 13.42,
+          "tmax": 27.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 2.8,
+          "tmin": 15.86,
+          "tmax": 31.2,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 2.95,
+          "tmin": 15.46,
+          "tmax": 30.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 0.79,
+          "tmin": 15.09,
+          "tmax": 32.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 0.28,
+          "tmin": 17.84,
+          "tmax": 33.19,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 0.05,
+          "tmin": 23.85,
+          "tmax": 25.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 0.19,
+          "tmin": 19.31,
+          "tmax": 29.1,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 0.59,
+          "tmin": 23.08,
+          "tmax": 25.62,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 8.52,
+          "tmin": 19.75,
+          "tmax": 28.48,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 1.52,
+          "tmin": 16.38,
+          "tmax": 29.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 1.3,
+          "tmin": 17.9,
+          "tmax": 29.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 0.18,
+          "tmin": 15.47,
+          "tmax": 28.3,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20260202_to_20260209_fcst.csv",
+      "start": "20260202",
+      "end": "20260209",
+      "counties": {
+        "1": {
+          "rain": 0.47,
+          "tmin": 24.66,
+          "tmax": 27.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 3.16,
+          "tmin": 19.63,
+          "tmax": 32.37,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 1.1,
+          "tmin": 22.68,
+          "tmax": 30.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 1.07,
+          "tmin": 21.17,
+          "tmax": 34.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.31,
+          "tmin": 24.01,
+          "tmax": 29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 9.81,
+          "tmin": 15.74,
+          "tmax": 31.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 0.61,
+          "tmin": 20.34,
+          "tmax": 34.74,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 0.09,
+          "tmin": 19.55,
+          "tmax": 35.13,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 0,
+          "tmin": 17.76,
+          "tmax": 32.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 0.02,
+          "tmin": 18.83,
+          "tmax": 31.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.05,
+          "tmin": 18.94,
+          "tmax": 32.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 5.21,
+          "tmin": 11.6,
+          "tmax": 26.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 0.04,
+          "tmin": 14.57,
+          "tmax": 28.39,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 1.89,
+          "tmin": 12.9,
+          "tmax": 28.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.23,
+          "tmin": 15.81,
+          "tmax": 30.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 0.36,
+          "tmin": 13.12,
+          "tmax": 28.44,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.38,
+          "tmin": 14.43,
+          "tmax": 30.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 2.97,
+          "tmin": 10.38,
+          "tmax": 25.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 8,
+          "tmin": 7.75,
+          "tmax": 22.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 20.33,
+          "tmin": 9.37,
+          "tmax": 23.62,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 2.26,
+          "tmin": 9.2,
+          "tmax": 23.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 6.74,
+          "tmin": 10.85,
+          "tmax": 25.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 0.12,
+          "tmin": 21.48,
+          "tmax": 34.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0.87,
+          "tmin": 16.91,
+          "tmax": 33.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 0.04,
+          "tmin": 18.86,
+          "tmax": 31.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 2.7,
+          "tmin": 12.37,
+          "tmax": 27.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 2.4,
+          "tmin": 12.74,
+          "tmax": 30.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 1.02,
+          "tmin": 10.61,
+          "tmax": 26.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 13.7,
+          "tmin": 13.55,
+          "tmax": 30.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0.07,
+          "tmin": 14.64,
+          "tmax": 28.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 0.14,
+          "tmin": 12.69,
+          "tmax": 27.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 2.23,
+          "tmin": 8.79,
+          "tmax": 24.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 10.37,
+          "tmin": 12.31,
+          "tmax": 28.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 29.66,
+          "tmin": 15.73,
+          "tmax": 29.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 19.4,
+          "tmin": 16.41,
+          "tmax": 31.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 9.16,
+          "tmin": 12.7,
+          "tmax": 28.81,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 11.02,
+          "tmin": 15.38,
+          "tmax": 32.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 13.06,
+          "tmin": 16.14,
+          "tmax": 31.15,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 10.06,
+          "tmin": 15.66,
+          "tmax": 33.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 14.38,
+          "tmin": 18.4,
+          "tmax": 33.3,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 19.63,
+          "tmin": 21.84,
+          "tmax": 26.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 13.33,
+          "tmin": 18.34,
+          "tmax": 28.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 21.61,
+          "tmin": 20.42,
+          "tmax": 25.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 25.41,
+          "tmin": 18.84,
+          "tmax": 29.29,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 21.97,
+          "tmin": 16.16,
+          "tmax": 30.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 15.85,
+          "tmin": 17.33,
+          "tmax": 30.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 1.83,
+          "tmin": 14.57,
+          "tmax": 30,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20260302_to_20260309_fcst.csv",
+      "start": "20260302",
+      "end": "20260309",
+      "counties": {
+        "1": {
+          "rain": 4.23,
+          "tmin": 26.84,
+          "tmax": 28.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 35.64,
+          "tmin": 21.62,
+          "tmax": 30.5,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 10.26,
+          "tmin": 24.94,
+          "tmax": 31.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 5.67,
+          "tmin": 23.92,
+          "tmax": 34.9,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 0.95,
+          "tmin": 25.38,
+          "tmax": 29.9,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 49.68,
+          "tmin": 17.32,
+          "tmax": 27.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 2.48,
+          "tmin": 23.55,
+          "tmax": 35.15,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 2.46,
+          "tmin": 23.35,
+          "tmax": 35.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 11.12,
+          "tmin": 20.76,
+          "tmax": 32.34,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 40.79,
+          "tmin": 20.82,
+          "tmax": 30.8,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 8.61,
+          "tmin": 22.39,
+          "tmax": 31.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 52.01,
+          "tmin": 14.12,
+          "tmax": 24.75,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 38.9,
+          "tmin": 17.14,
+          "tmax": 26.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 61.09,
+          "tmin": 15.29,
+          "tmax": 25.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 28.72,
+          "tmin": 19.49,
+          "tmax": 28.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 85.69,
+          "tmin": 15.13,
+          "tmax": 24.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 54.42,
+          "tmin": 17.54,
+          "tmax": 27.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 103.05,
+          "tmin": 12.39,
+          "tmax": 23.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 84.4,
+          "tmin": 9.06,
+          "tmax": 20.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 128.09,
+          "tmin": 10.48,
+          "tmax": 21.43,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 113.22,
+          "tmin": 10.84,
+          "tmax": 21.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 152.78,
+          "tmin": 12.25,
+          "tmax": 22.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 25.29,
+          "tmin": 21.02,
+          "tmax": 33.36,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 32.27,
+          "tmin": 18.76,
+          "tmax": 31.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 21.95,
+          "tmin": 19.79,
+          "tmax": 30.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 70.21,
+          "tmin": 14.2,
+          "tmax": 24.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 89.39,
+          "tmin": 15.38,
+          "tmax": 27.37,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 89.99,
+          "tmin": 13.37,
+          "tmax": 24.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 126.88,
+          "tmin": 15.76,
+          "tmax": 27.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 36.51,
+          "tmin": 16.14,
+          "tmax": 26.66,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 17.88,
+          "tmin": 14.48,
+          "tmax": 25.67,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 96.24,
+          "tmin": 10.76,
+          "tmax": 22.11,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 111.37,
+          "tmin": 13.72,
+          "tmax": 25.5,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 70.63,
+          "tmin": 16.21,
+          "tmax": 26.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 122.23,
+          "tmin": 17.14,
+          "tmax": 28.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 105.16,
+          "tmin": 13.57,
+          "tmax": 25.48,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 123.1,
+          "tmin": 17.73,
+          "tmax": 30.19,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 102.92,
+          "tmin": 17.99,
+          "tmax": 29.32,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 82.34,
+          "tmin": 18.15,
+          "tmax": 30.8,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 34.02,
+          "tmin": 19.83,
+          "tmax": 31.86,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 63.96,
+          "tmin": 21.54,
+          "tmax": 25.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 90.34,
+          "tmin": 18.76,
+          "tmax": 27.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 56.73,
+          "tmin": 20.1,
+          "tmax": 25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 51.76,
+          "tmin": 19.11,
+          "tmax": 27.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 124.25,
+          "tmin": 17.19,
+          "tmax": 28.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 83.76,
+          "tmin": 17.89,
+          "tmax": 28.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 113.92,
+          "tmin": 16.38,
+          "tmax": 26.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20260413_to_20260420_fcst.csv",
+      "start": "20260413",
+      "end": "20260420",
+      "counties": {
+        "1": {
+          "rain": 5.56,
+          "tmin": 26.96,
+          "tmax": 28.86,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 2.21,
+          "tmin": 20.79,
+          "tmax": 28.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 24.49,
+          "tmin": 24.75,
+          "tmax": 30.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 25.13,
+          "tmin": 23.69,
+          "tmax": 33.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 3,
+          "tmin": 26.37,
+          "tmax": 30.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 4.86,
+          "tmin": 16.58,
+          "tmax": 26.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 15.33,
+          "tmin": 23.8,
+          "tmax": 33.34,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 10.13,
+          "tmin": 23.95,
+          "tmax": 33.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 6.3,
+          "tmin": 21.37,
+          "tmax": 31.48,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 19.76,
+          "tmin": 20.58,
+          "tmax": 30.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 7.94,
+          "tmin": 21.58,
+          "tmax": 31.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 18.22,
+          "tmin": 13.05,
+          "tmax": 24.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 18.59,
+          "tmin": 16.77,
+          "tmax": 25.86,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 53.31,
+          "tmin": 14.86,
+          "tmax": 24.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 17.87,
+          "tmin": 18.89,
+          "tmax": 27.74,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 19.68,
+          "tmin": 14.24,
+          "tmax": 24.74,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 15.83,
+          "tmin": 16.72,
+          "tmax": 26.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 15.99,
+          "tmin": 11.75,
+          "tmax": 24.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 53.59,
+          "tmin": 9.06,
+          "tmax": 20.56,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 76.75,
+          "tmin": 10.19,
+          "tmax": 19.37,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 72.4,
+          "tmin": 10.78,
+          "tmax": 20.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 55.74,
+          "tmin": 10.83,
+          "tmax": 22.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 3.96,
+          "tmin": 22.99,
+          "tmax": 34.27,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 0.11,
+          "tmin": 18.56,
+          "tmax": 32.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 1.2,
+          "tmin": 19.93,
+          "tmax": 30.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 1.31,
+          "tmin": 14.07,
+          "tmax": 26.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 0.21,
+          "tmin": 14.92,
+          "tmax": 28.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 2.07,
+          "tmin": 12.72,
+          "tmax": 25.33,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 0.3,
+          "tmin": 14.91,
+          "tmax": 29.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 0.54,
+          "tmin": 16.17,
+          "tmax": 27.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 5.22,
+          "tmin": 13.82,
+          "tmax": 26.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 4.6,
+          "tmin": 10.66,
+          "tmax": 23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 4.33,
+          "tmin": 12.32,
+          "tmax": 25.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 5.05,
+          "tmin": 15.92,
+          "tmax": 26.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 1.51,
+          "tmin": 17.78,
+          "tmax": 29.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 19.34,
+          "tmin": 13.35,
+          "tmax": 26.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 3.32,
+          "tmin": 17.19,
+          "tmax": 32.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 8.86,
+          "tmin": 17.3,
+          "tmax": 30.48,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 4.87,
+          "tmin": 18.34,
+          "tmax": 32.4,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 2.74,
+          "tmin": 20.46,
+          "tmax": 32.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 5.09,
+          "tmin": 24.07,
+          "tmax": 26.56,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 3.92,
+          "tmin": 19.53,
+          "tmax": 28.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 0.47,
+          "tmin": 23.3,
+          "tmax": 25.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 3.78,
+          "tmin": 19.57,
+          "tmax": 29.03,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 15.31,
+          "tmin": 16.64,
+          "tmax": 30.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 10.76,
+          "tmin": 18.48,
+          "tmax": 29.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 10.96,
+          "tmin": 14.14,
+          "tmax": 27.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20260504_to_20260511_fcst.csv",
+      "start": "20260504",
+      "end": "20260511",
+      "counties": {
+        "1": {
+          "rain": 3.12,
+          "tmin": 26.61,
+          "tmax": 28.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3009
+        },
+        "2": {
+          "rain": 1.84,
+          "tmin": 18.95,
+          "tmax": 28.78,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2300
+        },
+        "3": {
+          "rain": 18.03,
+          "tmin": 23.84,
+          "tmax": 30.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1990
+        },
+        "4": {
+          "rain": 9.64,
+          "tmin": 21.97,
+          "tmax": 33.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1927
+        },
+        "5": {
+          "rain": 24.03,
+          "tmin": 25.68,
+          "tmax": 29.75,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 7502
+        },
+        "6": {
+          "rain": 4.22,
+          "tmin": 15.05,
+          "tmax": 26.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 5844
+        },
+        "7": {
+          "rain": 3.32,
+          "tmin": 22.53,
+          "tmax": 33.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3279
+        },
+        "8": {
+          "rain": 3.09,
+          "tmin": 22.96,
+          "tmax": 33.81,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6728
+        },
+        "9": {
+          "rain": 19.73,
+          "tmin": 21.03,
+          "tmax": 31.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 10917
+        },
+        "10": {
+          "rain": 21.45,
+          "tmin": 20.69,
+          "tmax": 30.05,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 6974
+        },
+        "11": {
+          "rain": 0.84,
+          "tmin": 20.97,
+          "tmax": 32.04,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1605
+        },
+        "12": {
+          "rain": 26.99,
+          "tmin": 14.31,
+          "tmax": 24.8,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 517
+        },
+        "13": {
+          "rain": 5.9,
+          "tmin": 16.02,
+          "tmax": 25.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 546
+        },
+        "14": {
+          "rain": 33.31,
+          "tmin": 14.3,
+          "tmax": 24.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "15": {
+          "rain": 0.77,
+          "tmin": 17.16,
+          "tmax": 28.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1202
+        },
+        "16": {
+          "rain": 7.55,
+          "tmin": 13.87,
+          "tmax": 24.13,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 269
+        },
+        "17": {
+          "rain": 0.95,
+          "tmin": 15.68,
+          "tmax": 26.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 868
+        },
+        "18": {
+          "rain": 102.25,
+          "tmin": 12.82,
+          "tmax": 23.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 348
+        },
+        "19": {
+          "rain": 104.08,
+          "tmin": 9.97,
+          "tmax": 19.52,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 209
+        },
+        "20": {
+          "rain": 107.07,
+          "tmin": 10.42,
+          "tmax": 20.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 71
+        },
+        "21": {
+          "rain": 56.01,
+          "tmin": 10.41,
+          "tmax": 20.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 170
+        },
+        "22": {
+          "rain": 134.34,
+          "tmin": 11.88,
+          "tmax": 20.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 259
+        },
+        "23": {
+          "rain": 20.62,
+          "tmin": 22.08,
+          "tmax": 33.51,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 13013
+        },
+        "24": {
+          "rain": 36.46,
+          "tmin": 18.14,
+          "tmax": 31.2,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2632
+        },
+        "25": {
+          "rain": 3.44,
+          "tmin": 20.22,
+          "tmax": 31.13,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1575
+        },
+        "26": {
+          "rain": 55.77,
+          "tmin": 13.52,
+          "tmax": 24.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 417
+        },
+        "27": {
+          "rain": 81.13,
+          "tmin": 14.73,
+          "tmax": 27.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 186
+        },
+        "28": {
+          "rain": 44.32,
+          "tmin": 12.7,
+          "tmax": 24.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 333
+        },
+        "29": {
+          "rain": 89.87,
+          "tmin": 15.15,
+          "tmax": 27.22,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 197
+        },
+        "30": {
+          "rain": 25.24,
+          "tmin": 16.38,
+          "tmax": 27.37,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 616
+        },
+        "31": {
+          "rain": 27.15,
+          "tmin": 14.84,
+          "tmax": 26.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 467
+        },
+        "32": {
+          "rain": 65.51,
+          "tmin": 10.91,
+          "tmax": 21.74,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 422
+        },
+        "33": {
+          "rain": 64.29,
+          "tmin": 13.4,
+          "tmax": 24.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1085
+        },
+        "34": {
+          "rain": 11.41,
+          "tmin": 15.59,
+          "tmax": 26.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4253
+        },
+        "35": {
+          "rain": 70.68,
+          "tmin": 17.09,
+          "tmax": 28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 206
+        },
+        "36": {
+          "rain": 125.71,
+          "tmin": 13.8,
+          "tmax": 25.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 368
+        },
+        "37": {
+          "rain": 92.54,
+          "tmin": 16.74,
+          "tmax": 29.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 106
+        },
+        "38": {
+          "rain": 82.86,
+          "tmin": 16.73,
+          "tmax": 28.83,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 69
+        },
+        "39": {
+          "rain": 80.56,
+          "tmin": 17.21,
+          "tmax": 30.13,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 299
+        },
+        "40": {
+          "rain": 28.78,
+          "tmin": 19.57,
+          "tmax": 30.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2575
+        },
+        "41": {
+          "rain": 18.91,
+          "tmin": 22.2,
+          "tmax": 25.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 801
+        },
+        "42": {
+          "rain": 40.76,
+          "tmin": 18.56,
+          "tmax": 27.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 124
+        },
+        "43": {
+          "rain": 14.69,
+          "tmin": 20.92,
+          "tmax": 25.21,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 382
+        },
+        "44": {
+          "rain": 26.94,
+          "tmin": 18.9,
+          "tmax": 28.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 8073
+        },
+        "45": {
+          "rain": 107.57,
+          "tmin": 16.34,
+          "tmax": 27.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 135
+        },
+        "46": {
+          "rain": 89.95,
+          "tmin": 17.5,
+          "tmax": 27.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 112
+        },
+        "47": {
+          "rain": 86.83,
+          "tmin": 15.65,
+          "tmax": 24.95,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 237
+        }
+      }
+    },
+    {
+      "file": "20260602_to_20260608_fcst.csv",
+      "start": "20260602",
+      "end": "20260608",
+      "counties": {
+        "1": {
+          "rain": 12.53,
+          "tmin": 19.94,
+          "tmax": 30.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 15
+        },
+        "2": {
+          "rain": 4.42,
+          "tmin": 18.59,
+          "tmax": 29.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 519
+        },
+        "3": {
+          "rain": 13.13,
+          "tmin": 20.57,
+          "tmax": 31.58,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 792
+        },
+        "4": {
+          "rain": 2.78,
+          "tmin": 19.61,
+          "tmax": 32.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2465
+        },
+        "5": {
+          "rain": 23.85,
+          "tmin": 22.03,
+          "tmax": 31.26,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 381
+        },
+        "6": {
+          "rain": 0.74,
+          "tmin": 15.75,
+          "tmax": 27.69,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1079
+        },
+        "7": {
+          "rain": 5.04,
+          "tmin": 21.48,
+          "tmax": 32.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2745
+        },
+        "8": {
+          "rain": 0.53,
+          "tmin": 20.58,
+          "tmax": 33.16,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3571
+        },
+        "9": {
+          "rain": 0.68,
+          "tmin": 19.58,
+          "tmax": 30.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1646
+        },
+        "10": {
+          "rain": 0.19,
+          "tmin": 21.97,
+          "tmax": 32.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4785
+        },
+        "11": {
+          "rain": 0.02,
+          "tmin": 18.99,
+          "tmax": 32.19,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1595
+        },
+        "12": {
+          "rain": 4.22,
+          "tmin": 12.46,
+          "tmax": 24.08,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 437
+        },
+        "13": {
+          "rain": 3.61,
+          "tmin": 9.85,
+          "tmax": 20.14,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "14": {
+          "rain": 3.94,
+          "tmin": 13.21,
+          "tmax": 24.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 180
+        },
+        "15": {
+          "rain": 0.45,
+          "tmin": 16.12,
+          "tmax": 28.88,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1916
+        },
+        "16": {
+          "rain": 0.69,
+          "tmin": 12.63,
+          "tmax": 24.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 374
+        },
+        "17": {
+          "rain": 0.95,
+          "tmin": 13.48,
+          "tmax": 25.75,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 514
+        },
+        "18": {
+          "rain": 17.29,
+          "tmin": 12.23,
+          "tmax": 24.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 205
+        },
+        "19": {
+          "rain": 12.56,
+          "tmin": 8.32,
+          "tmax": 19.65,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 210
+        },
+        "20": {
+          "rain": 16.3,
+          "tmin": 9.63,
+          "tmax": 20.59,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 94
+        },
+        "21": {
+          "rain": 8.36,
+          "tmin": 9.24,
+          "tmax": 20.41,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 156
+        },
+        "22": {
+          "rain": 4.45,
+          "tmin": 11.65,
+          "tmax": 23.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "23": {
+          "rain": 0.01,
+          "tmin": 20.99,
+          "tmax": 32.71,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4421
+        },
+        "24": {
+          "rain": 1.58,
+          "tmin": 15.94,
+          "tmax": 28.7,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 581
+        },
+        "25": {
+          "rain": 0.12,
+          "tmin": 18.15,
+          "tmax": 30.73,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1321
+        },
+        "26": {
+          "rain": 5.8,
+          "tmin": 10.26,
+          "tmax": 20.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 153
+        },
+        "27": {
+          "rain": 9.07,
+          "tmin": 13.5,
+          "tmax": 27.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 211
+        },
+        "28": {
+          "rain": 5.38,
+          "tmin": 12.01,
+          "tmax": 25.38,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 193
+        },
+        "29": {
+          "rain": 32.04,
+          "tmin": 15.45,
+          "tmax": 28.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 185
+        },
+        "30": {
+          "rain": 1.51,
+          "tmin": 13.01,
+          "tmax": 24.57,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 682
+        },
+        "31": {
+          "rain": 0.6,
+          "tmin": 13.92,
+          "tmax": 26.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 602
+        },
+        "32": {
+          "rain": 6.62,
+          "tmin": 9.68,
+          "tmax": 21.52,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 471
+        },
+        "33": {
+          "rain": 4.07,
+          "tmin": 13.04,
+          "tmax": 25.85,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1124
+        },
+        "34": {
+          "rain": 0.41,
+          "tmin": 14.63,
+          "tmax": 25.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1373
+        },
+        "35": {
+          "rain": 16.07,
+          "tmin": 17.51,
+          "tmax": 29.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "36": {
+          "rain": 19.68,
+          "tmin": 13.68,
+          "tmax": 25.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 155
+        },
+        "37": {
+          "rain": 25.36,
+          "tmin": 15.85,
+          "tmax": 29.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 185
+        },
+        "38": {
+          "rain": 61.74,
+          "tmin": 16.59,
+          "tmax": 29.92,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 36
+        },
+        "39": {
+          "rain": 16.86,
+          "tmin": 16.95,
+          "tmax": 29.72,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 195
+        },
+        "40": {
+          "rain": 11.48,
+          "tmin": 18.01,
+          "tmax": 28.98,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 110
+        },
+        "41": {
+          "rain": 5.84,
+          "tmin": 20.94,
+          "tmax": 26.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "42": {
+          "rain": 2.53,
+          "tmin": 19,
+          "tmax": 28.17,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "43": {
+          "rain": 2.92,
+          "tmin": 21.63,
+          "tmax": 26.06,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 298
+        },
+        "44": {
+          "rain": 4,
+          "tmin": 19.83,
+          "tmax": 26.86,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 200
+        },
+        "45": {
+          "rain": 3.69,
+          "tmin": 16.05,
+          "tmax": 29.47,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 84
+        },
+        "46": {
+          "rain": 6.21,
+          "tmin": 16.07,
+          "tmax": 29.24,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 56
+        },
+        "47": {
+          "rain": 1.76,
+          "tmin": 14.65,
+          "tmax": 26.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 44
+        }
+      }
+    },
+    {
+      "file": "20260706_to_20260713_fcst.csv",
+      "start": "20260706",
+      "end": "20260713",
+      "counties": {
+        "1": {
+          "rain": 7.28,
+          "tmin": 18.72,
+          "tmax": 29.36,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 15
+        },
+        "2": {
+          "rain": 3.79,
+          "tmin": 17.47,
+          "tmax": 28.82,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 519
+        },
+        "3": {
+          "rain": 4.66,
+          "tmin": 19.31,
+          "tmax": 30.18,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 792
+        },
+        "4": {
+          "rain": 1.8,
+          "tmin": 18.58,
+          "tmax": 30.91,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2465
+        },
+        "5": {
+          "rain": 9.15,
+          "tmin": 20.66,
+          "tmax": 30.12,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 381
+        },
+        "6": {
+          "rain": 0.87,
+          "tmin": 14.91,
+          "tmax": 26.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1079
+        },
+        "7": {
+          "rain": 2.85,
+          "tmin": 19.93,
+          "tmax": 31.61,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 2745
+        },
+        "8": {
+          "rain": 0.46,
+          "tmin": 19.03,
+          "tmax": 31.62,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 3571
+        },
+        "9": {
+          "rain": 0.7,
+          "tmin": 17.79,
+          "tmax": 28.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1646
+        },
+        "10": {
+          "rain": 0.37,
+          "tmin": 20.65,
+          "tmax": 31.22,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4785
+        },
+        "11": {
+          "rain": 0.06,
+          "tmin": 17.97,
+          "tmax": 31.02,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1595
+        },
+        "12": {
+          "rain": 5.07,
+          "tmin": 11.79,
+          "tmax": 23.68,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 437
+        },
+        "13": {
+          "rain": 7.89,
+          "tmin": 9.64,
+          "tmax": 19.53,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "14": {
+          "rain": 6.76,
+          "tmin": 13.63,
+          "tmax": 24.43,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 180
+        },
+        "15": {
+          "rain": 1.07,
+          "tmin": 14.96,
+          "tmax": 28.09,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1916
+        },
+        "16": {
+          "rain": 2.09,
+          "tmin": 12.39,
+          "tmax": 24.6,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 374
+        },
+        "17": {
+          "rain": 2.26,
+          "tmin": 13.2,
+          "tmax": 24.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 514
+        },
+        "18": {
+          "rain": 33.37,
+          "tmin": 11.16,
+          "tmax": 24.45,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 205
+        },
+        "19": {
+          "rain": 21.37,
+          "tmin": 7.81,
+          "tmax": 20.01,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 210
+        },
+        "20": {
+          "rain": 20.84,
+          "tmin": 9.3,
+          "tmax": 19.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 94
+        },
+        "21": {
+          "rain": 15.7,
+          "tmin": 9.02,
+          "tmax": 20.25,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 156
+        },
+        "22": {
+          "rain": 20.99,
+          "tmin": 11.37,
+          "tmax": 22.76,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "23": {
+          "rain": 0,
+          "tmin": 20.19,
+          "tmax": 31.79,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 4421
+        },
+        "24": {
+          "rain": 1.1,
+          "tmin": 15.34,
+          "tmax": 28.23,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 581
+        },
+        "25": {
+          "rain": 1.23,
+          "tmin": 17.17,
+          "tmax": 29.77,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1321
+        },
+        "26": {
+          "rain": 11.31,
+          "tmin": 9.58,
+          "tmax": 18.97,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 153
+        },
+        "27": {
+          "rain": 30.04,
+          "tmin": 13.39,
+          "tmax": 25.99,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 211
+        },
+        "28": {
+          "rain": 21.93,
+          "tmin": 11.65,
+          "tmax": 24.54,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 193
+        },
+        "29": {
+          "rain": 42.55,
+          "tmin": 15.39,
+          "tmax": 28.07,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 185
+        },
+        "30": {
+          "rain": 6.16,
+          "tmin": 12.31,
+          "tmax": 23.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 682
+        },
+        "31": {
+          "rain": 3.69,
+          "tmin": 13.19,
+          "tmax": 26.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 602
+        },
+        "32": {
+          "rain": 27.34,
+          "tmin": 8.9,
+          "tmax": 20.84,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 471
+        },
+        "33": {
+          "rain": 14.6,
+          "tmin": 12.49,
+          "tmax": 26.32,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1124
+        },
+        "34": {
+          "rain": 1.2,
+          "tmin": 13.67,
+          "tmax": 25.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 1373
+        },
+        "35": {
+          "rain": 24.51,
+          "tmin": 18.03,
+          "tmax": 29.35,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "36": {
+          "rain": 16.39,
+          "tmin": 13.11,
+          "tmax": 25.28,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 155
+        },
+        "37": {
+          "rain": 29.02,
+          "tmin": 16.05,
+          "tmax": 28.64,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 185
+        },
+        "38": {
+          "rain": 38.74,
+          "tmin": 16.19,
+          "tmax": 29.42,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 36
+        },
+        "39": {
+          "rain": 36.29,
+          "tmin": 16.67,
+          "tmax": 28.75,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 195
+        },
+        "40": {
+          "rain": 6.14,
+          "tmin": 17.68,
+          "tmax": 28.67,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 110
+        },
+        "41": {
+          "rain": 10.58,
+          "tmin": 20.65,
+          "tmax": 25.93,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 219
+        },
+        "42": {
+          "rain": 3.76,
+          "tmin": 18.88,
+          "tmax": 27.94,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 160
+        },
+        "43": {
+          "rain": 3.22,
+          "tmin": 21.41,
+          "tmax": 25.46,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 298
+        },
+        "44": {
+          "rain": 8.57,
+          "tmin": 19.46,
+          "tmax": 26.63,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 200
+        },
+        "45": {
+          "rain": 16.86,
+          "tmin": 15.76,
+          "tmax": 29.55,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 84
+        },
+        "46": {
+          "rain": 22.75,
+          "tmin": 16.45,
+          "tmax": 29.31,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 56
+        },
+        "47": {
+          "rain": 14.05,
+          "tmin": 13.97,
+          "tmax": 25.87,
+          "wind": null,
+          "wind_dir": null,
+          "point_count": 44
+        }
+      }
+    }
+  ]
+}

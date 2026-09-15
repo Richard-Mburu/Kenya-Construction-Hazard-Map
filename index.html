@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenya Construction Hazard Map | KCHM v2.0</title>
+<meta name="description" content="Real-time construction hazard monitoring for Kenya - flood, earthquake, landslide, drought risk assessment for major infrastructure projects.">
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="vendor/leaflet.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- App CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Marker pulse animation */
+@keyframes pulse { 0%,100%{transform:scale(1);opacity:.6} 50%{transform:scale(1.8);opacity:0} }
+
+/* Page load animation */
+@keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+.page.active { animation: fadeUp .2s ease; }
+
+/* Sort indicators */
+th.sort-asc::after { content: " ↑"; color: var(--blue); }
+th.sort-desc::after { content: " ↓"; color: var(--blue); }
+
+/* Field form pill header */
+.hazard-section-title {
+  font-family: var(--font-head); font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .8px; color: var(--muted);
+  border-bottom: 1px solid var(--border); padding-bottom: 6px; margin: 12px 0 8px;
+}
+</style>
+</head>
+<body>
+
+<div id="auth-gate" class="auth-gate">
+  <div class="auth-card">
+    <div class="modal-title">Invite-Only Access</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.5">
+      Enter your invited email to access this tool. Frontend demo gate only: true invite security needs a backend/auth service.
+    </div>
+    <div class="form-group">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-input" id="login-email" placeholder="name@example.org">
+    </div>
+    <button class="submit-btn" onclick="loginWithInvite()">Access Tool</button>
+    <div id="auth-message" style="margin-top:10px;font-size:11px;color:var(--muted)"></div>
+  </div>
+</div>
+
+<div id="app">
+
+  <!-- ======================================================
+       TOPBAR NAV
+  ====================================================== -->
+  <nav class="topbar">
+    <div class="topbar-logo">
+      <div class="hex">K</div>
+      <div>
+        KenyaHazardMap
+        <div class="sub">KCHM v2.0</div>
+      </div>
+    </div>
+
+    <nav class="nav-tabs">
+      <a class="nav-tab active" id="tab-map" href="#" onclick="showPage('map');return false">
+        <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l6-3 6 3 6-3v13l-6 3-6-3-6 3V7z"/><path d="M9 4v13M15 7v13"/></svg>
+        <span class="tab-text">Map</span>
+      </a>
+      <a class="nav-tab" id="tab-rank" href="#" onclick="showPage('rank');return false">
+        <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+        <span class="tab-text">Risk Rankings</span>
+      </a>
+      <a class="nav-tab" id="tab-field" href="#" onclick="showPage('field');return false">
+        <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        <span class="tab-text">Field Assessment</span>
+      </a>
+      <a class="nav-tab" id="tab-admin" href="#" onclick="showPage('admin');return false">
+        <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span class="tab-text">Admin</span>
+      </a>
+      <a class="nav-tab" id="tab-users" href="#" onclick="showPage('users');return false">
+        <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+        <span class="tab-text">Users</span>
+      </a>
+      <a class="nav-tab" id="tab-charts" href="#" onclick="showPage('charts');return false">
+        <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        <span class="tab-text">Analytics</span>
+      </a>
+      <a class="nav-tab" id="tab-performance" href="#" onclick="showPage('performance');return false">
+        <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        <span class="tab-text">Performance</span>
+      </a>
+    </nav>
+
+    <div class="topbar-right">
+      <span id="current-user" style="font-size:10px;color:var(--muted);font-family:var(--font-mono)"></span>
+      <span style="font-size:10px;color:var(--muted);font-family:var(--font-mono)">20 sites · Kenya 2024</span>
+      <span class="badge-live">LIVE</span>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       MAP PAGE
+  ====================================================== -->
+  <div class="page active" id="map-page" style="position:relative">
+
+    <div id="map-wrap" style="flex:1;position:relative">
+      <div id="map"></div>
+      <div id="map-status" class="map-status" hidden></div>
+      <div id="map-time-filter" class="map-time-filter">
+        <div class="filter-title">Time Filter</div>
+        <label>
+          KMD period
+          <select id="kmd-period-select" onchange="handleTimeFilterChange()">
+            <option value="">Latest</option>
+          </select>
+        </label>
+        <label>
+          Quake lookback
+          <select id="quake-lookback-select" onchange="handleTimeFilterChange()">
+            <option value="30">30 days</option>
+            <option value="90">90 days</option>
+            <option value="180">180 days</option>
+            <option value="365" selected>12 months</option>
+          </select>
+        </label>
+        <label>
+          Min magnitude
+          <select id="quake-minmag-select" onchange="handleTimeFilterChange()">
+            <option value="1" selected>M1+</option>
+            <option value="2">M2+</option>
+            <option value="3">M3+</option>
+            <option value="4">M4+</option>
+          </select>
+        </label>
+      </div>
+      <canvas id="heat-canvas" style="position:absolute;top:0;left:0;pointer-events:none;z-index:400"></canvas>
+
+      <!-- Sidebar Panels -->
+      <div class="map-sidebar">
+
+        <!-- Hazard Layers -->
+        <div class="mpanel">
+          <div class="mpanel-title">Live Data Layers</div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#2563eb"></div>KMD Rainfall</label>
+            <label class="toggle"><input type="checkbox" id="l-rainfall" checked onchange="toggleLayer('rainfall',this)"><span class="tslider"></span></label>
+          </div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#dc2626"></div>KMD Heat</label>
+            <label class="toggle"><input type="checkbox" id="l-heat" onchange="toggleLayer('heat',this)"><span class="tslider"></span></label>
+          </div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#64748b"></div>Subcounties</label>
+            <label class="toggle"><input type="checkbox" id="l-subcounty" onchange="toggleLayer('subcounty',this)"><span class="tslider"></span></label>
+          </div>
+          <div class="layer-divider"></div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#06b6d4"></div>Wind</label>
+            <label class="toggle"><input type="checkbox" id="l-wind" onchange="toggleLayer('wind',this)"><span class="tslider"></span></label>
+          </div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#16a34a"></div>Soil Saturation</label>
+            <label class="toggle"><input type="checkbox" id="l-soil" onchange="toggleLayer('soil',this)"><span class="tslider"></span></label>
+          </div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#facc15"></div>Solar</label>
+            <label class="toggle"><input type="checkbox" id="l-solar" checked onchange="toggleLayer('solar',this)"><span class="tslider"></span></label>
+          </div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#8b5a2b"></div>Elevation</label>
+            <label class="toggle"><input type="checkbox" id="l-elevation" onchange="toggleLayer('elevation',this)"><span class="tslider"></span></label>
+          </div>
+          <div class="layer-row">
+            <label class="layer-label"><div class="layer-dot" style="background:#7c3aed"></div>Live Quakes</label>
+            <label class="toggle"><input type="checkbox" id="l-liveEarthquake" checked onchange="toggleLayer('liveEarthquake',this)"><span class="tslider"></span></label>
+          </div>
+          <div id="live-layer-status" class="live-layer-status">KMD period loading...</div>
+        </div>
+
+        <!-- Legend -->
+        <div class="mpanel" id="dynamic-legend-panel">
+          <!-- Dynamic legend content is loaded by updateLegend() -->
+        </div>
+
+        <!-- Live Stats -->
+        <div class="mpanel">
+          <div class="mpanel-title">Live Summary</div>
+          <div id="mini-stats"></div>
+        </div>
+
+        <!-- Quick Nav -->
+        <div class="mpanel">
+          <div class="mpanel-title">Quick Navigate</div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <button class="btn btn-sm" onclick="map.flyTo([-1.28,36.82],10,{duration:1})">Nairobi</button>
+            <button class="btn btn-sm" onclick="map.flyTo([-4.05,39.66],11,{duration:1})">Mombasa</button>
+            <button class="btn btn-sm" onclick="map.flyTo([-0.09,34.76],10,{duration:1})">Kisumu</button>
+            <button class="btn btn-sm" onclick="map.flyTo([-0.30,36.08],10,{duration:1})">Nakuru</button>
+            <button class="btn btn-sm" onclick="map.flyTo([-0.5,37.5],6,{duration:1.5})">All Kenya</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Site Detail Panel -->
+      <div id="detail-panel" class="detail-panel"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       RISK RANKINGS PAGE
+  ====================================================== -->
+  <div class="page page-col" id="rank-page">
+
+    <div class="toolbar">
+      <h2>Risk Rankings</h2>
+      <div class="ph-sep"></div>
+      <input type="text" class="form-input" id="search-input" placeholder="Search site or county..." style="width:180px" oninput="filterTable()">
+      <select class="form-select" id="county-filter" onchange="filterTable()" style="width:140px">
+        <option value="">All Counties</option>
+        <option>Baringo</option><option>Garissa</option><option>Isiolo</option>
+        <option>Kajiado</option><option>Kiambu</option><option>Kisumu</option>
+        <option>Kitui</option><option>Lamu</option><option>Marsabit</option>
+        <option>Meru</option><option>Mombasa</option><option>Murang'a</option>
+        <option>Nairobi</option><option>Nakuru</option><option>Nandi</option>
+        <option>Turkana</option><option>West Pokot</option>
+      </select>
+      <select class="form-select" id="risk-filter" onchange="filterTable()" style="width:130px">
+        <option value="">All Risk Levels</option>
+        <option>HIGH</option><option>MEDIUM</option><option>LOW</option>
+      </select>
+      <div class="spacer"></div>
+      <button class="btn" onclick="exportCSV()">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Export CSV
+      </button>
+    </div>
+
+    <div class="page-body">
+      <!-- Stat Cards -->
+      <div class="stats-row" style="margin-bottom:14px" id="rank-stats"></div>
+
+      <!-- Table -->
+      <table id="rank-table">
+        <thead>
+          <tr>
+            <th onclick="sortTable('rank')" style="width:36px">#</th>
+            <th onclick="sortTable('name')">Project</th>
+            <th onclick="sortTable('county')">County</th>
+            <th onclick="sortTable('status')">Status</th>
+            <th onclick="sortTable('total')" style="color:var(--text)">Total ?</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody id="rank-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       FIELD ASSESSMENT PAGE
+  ====================================================== -->
+  <div class="page page-col" id="field-page">
+
+    <div class="toolbar">
+      <h2>Field Assessment</h2>
+      <div class="ph-sep"></div>
+      <span style="font-size:11px;color:var(--muted)">Mobile-optimised · GPS-enabled · Offline-capable</span>
+      <div class="spacer"></div>
+    </div>
+
+    <div class="page-body grid-2">
+
+      <div class="card field-form-card">
+        <div class="assessment-app-banner">
+          <div>
+            <div class="assessment-app-title">Assessment Mobile Workflow</div>
+            <div class="assessment-app-text">Complete the survey, capture GPS and photos, and submit. Automatic rating is hidden from field staff and is only shown in admin review.</div>
+          </div>
+          <div class="assessment-app-pills">
+            <span class="assessment-pill">Survey only</span>
+            <span class="assessment-pill">Admin review</span>
+            <span class="assessment-pill">Focal point alerts</span>
+          </div>
+        </div>
+
+        <div class="card-title">
+          <div class="card-icon" style="background:rgba(59,130,246,.15);color:var(--blue)">FA</div>
+          New Field Assessment
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Construction Site</label>
+          <select class="form-select" id="fa-site"></select>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div class="form-group">
+            <label class="form-label">Inspector Name</label>
+            <input type="text" class="form-input" id="fa-inspector" placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-input" id="fa-date">
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div class="form-group">
+            <label class="form-label">Department / Role</label>
+            <input type="text" class="form-input" id="fa-role" placeholder="Programme, Ops, Finance, SMT...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Visit Type</label>
+            <select class="form-select" id="fa-visit-type">
+              <option>Routine (weekly/biweekly)</option>
+              <option>Critical Milestone</option>
+              <option>Issue-Triggered</option>
+              <option>Final Inspection / DLP</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <div class="form-group">
+            <label class="form-label">Construction Type</label>
+            <select class="form-select" id="fa-construction-type">
+              <option value="">Select construction type</option>
+              <option>Borehole Rehab</option>
+              <option>Borehole Equipping</option>
+              <option>School WASH</option>
+              <option>Latrine/Sanitation</option>
+              <option>CFS</option>
+              <option>Classroom</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current Project Stage</label>
+            <select class="form-select" id="fa-project-stage">
+              <option value="">Select current stage</option>
+              <option>Design / BOQ</option>
+              <option>Procurement</option>
+              <option>Site Handover</option>
+              <option>Foundation</option>
+              <option>Mid-construction</option>
+              <option>Near Completion</option>
+              <option>DLP / Retention Period</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">GPS Coordinates</label>
+          <div style="display:flex;gap:6px">
+            <input type="text" class="form-input" id="fa-lat" placeholder="Latitude" style="flex:1">
+            <input type="text" class="form-input" id="fa-lng" placeholder="Longitude" style="flex:1">
+            <button class="btn" onclick="getGPS()" style="white-space:nowrap;flex-shrink:0">Use GPS</button>
+          </div>
+        </div>
+
+        <div class="hazard-section-title">Hazard Reference</div>
+        <div class="q-item full">
+          <div class="q-guidance">Hazard and risk intensity are determined only by mapped source data. Assessment visits do not capture or change hazard scores.</div>
+        </div>
+
+        <div class="hazard-section-title">Questionnaire Section A (Auto-Filled)</div>
+        <div id="autofill-fields" class="autofill-grid"></div>
+
+        <div class="hazard-section-title">Monitoring Questionnaire</div>
+        <div class="wizard-shell">
+          <div class="wizard-progress">
+            <div id="wizard-progress-label" class="wizard-progress-label"></div>
+            <div id="wizard-progress-dots" class="wizard-progress-dots"></div>
+          </div>
+          <div id="risk-summary-banner" class="risk-summary-banner" hidden></div>
+          <div id="questionnaire-setup" class="q-item full">
+            <div class="q-title">Setup Check</div>
+            <div class="q-guidance">Choose the visit type, construction type, and project stage above. The questionnaire will then show only the most relevant sections.</div>
+          </div>
+          <div id="questionnaire-sections"></div>
+          <div class="wizard-nav">
+            <button type="button" class="btn" id="wizard-prev" onclick="moveQuestionnaireStep(-1)">Previous</button>
+            <button type="button" class="btn btn-primary" id="wizard-next" onclick="moveQuestionnaireStep(1)">Next</button>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-top:12px">
+          <label class="form-label">Site Observations</label>
+          <textarea class="form-textarea form-input" id="fa-notes" rows="4" placeholder="Describe site conditions, visible hazards, drainage problems, structural concerns, machinery zones, proximity to water bodies..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Photo Upload (field photos)</label>
+          <input type="file" accept="image/*" id="fa-photo" multiple style="font-size:11px;color:var(--muted);background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px;width:100%">
+        </div>
+
+        <button class="submit-btn" onclick="submitAssessment()">Submit Assessment</button>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon" style="background:rgba(34,197,94,.15);color:var(--green)">OK</div>
+          Recent Assessments
+        </div>
+        <div id="recent-assessments"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       ADMIN PAGE
+  ====================================================== -->
+  <div class="page page-col" id="admin-page">
+
+    <div class="toolbar">
+      <h2>Admin Dashboard</h2>
+      <div class="ph-sep"></div>
+      <span style="font-size:11px;color:var(--muted)">
+        Site management · survey outcomes · focal point notifications
+      </span>
+      <div class="spacer"></div>
+      <button class="btn" onclick="exportAssessmentsCSV()">Export Assessments CSV</button>
+      <button class="btn btn-primary" onclick="showAddSiteModal()">
+        Add New Site
+      </button>
+    </div>
+
+    <div class="page-body" style="display:flex;flex-direction:column;gap:16px">
+      <div class="card registry-card">
+        <div class="card-title">
+          <div class="card-icon" style="background:rgba(59,130,246,.15);color:var(--blue)">AD</div>
+          Monitored Sites Registry
+        </div>
+
+        <div class="registry-summary">
+          <div>
+            <div class="registry-summary-title">Portfolio overview</div>
+            <div class="registry-summary-text">
+              A clearer view of every monitored site, current status, assessment coverage, and mapped risk level.
+            </div>
+          </div>
+          <div id="admin-registry-stats" class="registry-stats"></div>
+        </div>
+
+        <div class="registry-table-wrap">
+          <table class="registry-table">
+            <thead>
+              <tr>
+                <th>Site</th>
+                <th>County</th>
+                <th>Assessments</th>
+                <th>Status</th>
+                <th>Risk Score</th>
+                <th>Level</th>
+                <th>Location</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admin-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon" style="background:rgba(20,184,166,.15);color:var(--teal)">NT</div>
+          Assessment Notifications
+        </div>
+        <div class="registry-summary-text" style="margin-bottom:12px">
+          Automatic rating stays hidden during data collection. After submission, admin can review the result and notification records sent to the construction and security focal points.
+        </div>
+        <div id="admin-notification-list" class="notification-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       USERS PAGE
+  ====================================================== -->
+  <div class="page page-col" id="users-page">
+    <div class="toolbar">
+      <h2>User Access</h2>
+      <div class="ph-sep"></div>
+      <span style="font-size:11px;color:var(--muted)">Invite-only access · frontend demo gate</span>
+    </div>
+
+    <div class="page-body grid-2">
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon" style="background:rgba(59,130,246,.15);color:var(--blue)">US</div>
+          Invite User
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" id="invite-email" placeholder="name@example.org">
+        </div>
+        <button class="submit-btn" onclick="inviteUser()">Send Invite</button>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <div class="card-icon" style="background:rgba(20,184,166,.15);color:var(--teal)">LI</div>
+          Invited Users
+        </div>
+        <div id="invited-users"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       ANALYTICS PAGE
+  ====================================================== -->
+  <div class="page page-col" id="charts-page">
+    <div class="toolbar">
+      <h2>Analytics</h2>
+      <div class="ph-sep"></div>
+      <span style="font-size:11px;color:var(--muted)">Risk trends · Hazard distribution · County comparison</span>
+    </div>
+
+    <div class="page-body">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Average Hazard Score by Type</div>
+          <div class="chart-wrap"><canvas id="chart-hazard"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Top 10 Sites - Total Risk Score</div>
+          <div class="chart-wrap"><canvas id="chart-sites"></canvas></div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:16px">
+        <div class="card">
+          <div class="card-title">County Risk Comparison</div>
+          <div class="chart-wrap"><canvas id="chart-county"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Risk Weight Model</div>
+          <div class="chart-wrap"><canvas id="chart-weight"></canvas></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="card-title">Risk Site Count Trend - 2024 (mock)</div>
+        <div class="chart-wrap" style="height:260px"><canvas id="chart-trend"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       PERFORMANCE PAGE
+  ====================================================== -->
+  <div class="page page-col" id="performance-page">
+    <div class="toolbar">
+      <h2>Performance</h2>
+      <div class="ph-sep"></div>
+      <span style="font-size:11px;color:var(--muted)">Site performance · Contractor ratings · Community feedback</span>
+    </div>
+
+    <div class="page-body">
+      <div class="performance-callout">
+        <div class="callout-header">
+          <div class="callout-icon">PF</div>
+          <div>
+            <div class="callout-title">Construction Delivery Dashboard</div>
+            <div class="callout-subtitle">Operational performance indicators across active sites</div>
+          </div>
+        </div>
+        <div class="callout-metrics">
+          <div class="metric-item">
+            <div class="metric-value">20</div>
+            <div class="metric-label">Tracked Sites</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">8.4</div>
+            <div class="metric-label">Avg Quality Score</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">84%</div>
+            <div class="metric-label">Avg Schedule</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">0.8</div>
+            <div class="metric-label">Avg Safety Incidents</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Overall Performance Ranking</div>
+          <div class="chart-wrap"><canvas id="chart-performance"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Contractor Performance Distribution</div>
+          <div class="chart-wrap"><canvas id="chart-contractor"></canvas></div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:16px">
+        <div class="card">
+          <div class="card-title">Schedule Adherence by Site</div>
+          <div class="chart-wrap"><canvas id="chart-schedule"></canvas></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Community Satisfaction</div>
+          <div class="chart-wrap"><canvas id="chart-satisfaction"></canvas></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="card-title">
+          <div class="card-icon" style="background:rgba(59,130,246,.15);color:var(--blue)">PF</div>
+          Site Performance Rankings
+        </div>
+
+        <div class="toolbar" style="padding:0;margin-bottom:12px">
+          <input type="text" class="form-input" id="performance-search" placeholder="Search sites..." style="width:200px" oninput="filterPerformanceTable()">
+          <div class="spacer"></div>
+          <button class="btn" onclick="exportPerformanceCSV()">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Export CSV
+          </button>
+        </div>
+
+        <table id="performance-table">
+          <thead>
+            <tr>
+              <th onclick="sortPerformanceTable('rank')" style="width:36px">#</th>
+              <th onclick="sortPerformanceTable('name')">Project</th>
+              <th onclick="sortPerformanceTable('county')">County</th>
+              <th onclick="sortPerformanceTable('scheduleAdherence')" title="Schedule Adherence (%)">Schedule</th>
+              <th onclick="sortPerformanceTable('qualityScore')" title="Quality Score (1-10)">Quality</th>
+              <th onclick="sortPerformanceTable('contractorPerformance')" title="Contractor Rating (1-10)">Contractor</th>
+              <th onclick="sortPerformanceTable('communitySatisfaction')" title="Community Satisfaction (1-10)">Community</th>
+              <th onclick="sortPerformanceTable('overall')" style="color:var(--text)">Overall ↓</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="performance-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       ADD SITE MODAL
+  ====================================================== -->
+  <div id="add-site-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-title">Add Construction Site</div>
+
+      <div class="form-group">
+        <label class="form-label">Site Name *</label>
+        <input type="text" class="form-input" id="ns-name" placeholder="e.g. Athi River Bridge Extension">
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="form-group">
+          <label class="form-label">County *</label>
+          <select class="form-select" id="ns-county">
+            <option>Baringo</option><option>Garissa</option><option>Isiolo</option>
+            <option>Kajiado</option><option>Kiambu</option><option>Kisumu</option>
+            <option>Kitui</option><option>Lamu</option><option>Marsabit</option>
+            <option>Meru</option><option>Mombasa</option><option>Murang'a</option>
+            <option>Nairobi</option><option>Nakuru</option><option>Nandi</option>
+            <option>Turkana</option><option>West Pokot</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Type</label>
+          <select class="form-select" id="ns-type">
+            <option>Borehole</option><option>School WASH</option><option>Classroom Block</option>
+            <option>Child Friendly Space</option><option>Incinerator</option><option>Health Facility WASH</option>
+            <option>Latrine Block</option><option>Handwashing Station</option><option>Water Kiosk</option>
+            <option>Play Park</option><option>Spring Protection</option><option>Hygiene Promotion Hub</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="form-group">
+          <label class="form-label">Latitude *</label>
+          <input type="number" class="form-input" id="ns-lat" placeholder="-1.2800" step="0.0001">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Longitude *</label>
+          <input type="number" class="form-input" id="ns-lng" placeholder="36.8200" step="0.0001">
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="form-group">
+          <label class="form-label">Status</label>
+          <select class="form-select" id="ns-status">
+            <option>Active</option><option>Planned</option>
+            <option>Completed</option><option>Suspended</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Budget (KES)</label>
+          <input type="text" class="form-input" id="ns-budget" placeholder="e.g. KES 4.2B">
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="form-group">
+          <label class="form-label">Planned Start</label>
+          <input type="date" class="form-input" id="ns-start-date">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Planned Completion</label>
+          <input type="date" class="form-input" id="ns-end-date">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn" onclick="closeAddSiteModal()">Cancel</button>
+        <button class="btn btn-primary" onclick="addSite()">Add Site -></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+  <div id="assessment-modal" class="modal-overlay">
+    <div class="modal" style="width:760px;max-width:96vw">
+      <div class="modal-title">Assessment Details</div>
+      <div id="assessment-modal-body" style="font-size:12px;color:var(--text);max-height:70vh;overflow:auto"></div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeAssessmentModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end #app -->
+
+<!-- ======================================================
+     SCRIPTS
+====================================================== -->
+<!-- Leaflet JS -->
+<script src="vendor/leaflet.js"></script>
+
+<!-- Chart.js -->
+<script src="vendor/chart.umd.min.js"></script>
+
+<!-- App Data -->
+<script src="js/data.js"></script>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- App Logic -->
+<script src="js/app.js"></script>
+
+<!-- Set today's date on field form -->
+<script>
+  const dateInput = document.getElementById('fa-date');
+  if (dateInput) dateInput.value = new Date().toISOString().split('T')[0];
+  const startInput = document.getElementById('ns-start-date');
+  if (startInput) startInput.value = new Date().toISOString().split('T')[0];
+</script>
+
+</body>
+</html>
+
+
+
